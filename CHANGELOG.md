@@ -1,5 +1,22 @@
 # Historial de cambios — Guía y Traducción ES
 
+## v0.3 — 2026-10-02
+- **Rendimiento (adiós a «Calculando...»)**: The Binding of Jimbo activa en Steamodded las «mejoras cuánticas», que obligaban a recalcular todos los comodines y zonas cada vez que el juego consultaba la mejora de una carta (~8.000 recálculos y 7-14 s por mano, incluso sin comodines). Ahora se detectan automáticamente (inspeccionando el código con `jit.util`) las 13 cartas que usan esa mecánica y el recálculo solo se hace si alguna está en juego. Medido con el bot: **0,2-0,5 s por mano** (unas 30 veces más rápido) con resultados idénticos.
+- **Estabilidad** (revisión para jugar Multiplayer entre Windows y Mac sin cierres), probada con un bot que juega partidas completas a velocidad x8:
+  - Cryptid: el parche «Antimatter Deck» evaluaba `currentBack.effect` con `currentBack` nulo y cerraba el juego al dibujar el reverso de una carta (parche en `lovely.toml`).
+  - Kino + Card Sleeves 1.9.4: las fundas «Género», «Kinoween» y «Películas A» leían `card.effect.center` y cerraban el juego al empezar la partida (parches en `lovely.toml`).
+  - Kino / Bakery: zonas de cartas de una partida anterior ya destruidas cerraban el juego al empezar otra sin reiniciar (filtro en `SMODS.get_card_areas`).
+  - Talisman: comparar el dinero o la puntuación («números grandes») con un número normal cerraba el juego. Lo mismo al comparar la puntuación con el tamaño de la ciega cuando uno es número grande y el otro no. Corregido en 20 puntos de 10 mods: Shop Undo (botón Cambiar y Deshacer), The Binding of Jimbo (pecados Envidia/Avaricia y 2 comodines), Paperback (Orgullo, Paraguas raído), Multiplayer (pegatina Persistente, ciega El Brazo, vista previa), Bunco (tamaño de ciega animado, comodín de fracción y contador del Cazarrecompensas), Bakery (amuleto de deuda), Kino (Cristal Oscuro, Pantera Negra y una ciega), Joker Evolution y Lost Edition (Vandalismo). Nueva función `guiaes_num()`.
+  - Ortalab: la insignia de la ciega en el HUD cerraba el juego mientras el HUD se reconstruía (parche en `lovely.toml`).
+  - Talisman + Steamodded 26.829: el parche de Talisman para `last_hand_oneshot` ya no coincidía; al acabar cada mano se comparaba puntuación y ciega sin protección. También protegidos el fin de ronda con Escudo, la reducción de ciega del juego base, la vista previa de El Brazo y el Gato Negro de Ortalab. `guiaes_num()` se inyecta además en el `main.lua` del juego.
+  - Bunco + Steamodded 26.829: un parche de Bunco cerraba el bloque de la descripción de ediciones antes de tiempo y el juego se cerraba al mostrar cualquier carta con edición (parche en `lovely.toml`).
+  - Multiplayer (TheOrder): elegir al azar entre una lista vacía de comodines o cartas cerraba el juego al puntuar; ahora lo resuelve el juego base.
+  - Pokermon y The Binding of Jimbo: los créditos de artista cerraban el juego al pasar el ratón sobre una etiqueta o sello no registrados.
+  - Cartas forzadas: la funda «Papel» de Paperback con un comodín prohibido por un reglamento de Multiplayer y la funda «Misterio» de Kino (regala `c_kino_mystery`, que no existe) cerraban el juego al empezar. Ahora se deduce el tipo o se crea una carta al azar del mismo tipo.
+- `.luarc.json` movido a `herramientas/` (Steamodded lo confundía con un archivo de metadatos).
+- Probado con un bot durante varias horas de partidas (todas las barajas, fundas, apuestas y reglamentos de Multiplayer).
+- Archivos: `lovely.toml` (nuevo, 34 parches), `main.lua`, `localization/es_ES.lua`, `manifest.json`, `README.md`.
+
 ## v0.2 — 2026-10-02
 - Pestañas **Recomendados**, **Combina bien** y **Evita** con consejos verificados en el código de los mods (`recomendaciones.lua`).
 - Arreglo Card Sleeves + Galdur: CardSleeves actualizado a 1.9.4 (compatible con el nuevo menú de partida de Steamodded 26.829) y Galdur retirado (su autor lo desactiva en Steamodded nuevo).

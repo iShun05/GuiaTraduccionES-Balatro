@@ -1,0 +1,321 @@
+[manifest]
+version = "1.0.0"
+dump_lua = true
+# Prioridad muy alta: se aplica después de los parches de los demás mods
+priority = 2147483600
+
+# Estabilidad: el parche «Antimatter Deck» de Cryptid (lovely/lib_ui.toml) tiene
+# un fallo de prioridad de operadores: `a and b or a.effect...` evalúa
+# `currentBack.effect` aunque currentBack sea nil, y el juego se cierra al
+# dibujar el reverso de una carta si en ese instante no hay baraja definida.
+# Si Cryptid no está instalado, el patrón no coincide y no pasa nada.
+[[patches]]
+[patches.pattern]
+target = '''=[SMODS _ "src/card_draw.lua"]'''
+pattern = "if currentBack and currentBack.effect.config.cry_antimatter or currentBack.effect.config.cry_force_edition == 'negative' then"
+position = "at"
+payload = "if currentBack and currentBack.effect and currentBack.effect.config and (currentBack.effect.config.cry_antimatter or currentBack.effect.config.cry_force_edition == 'negative') then"
+match_indent = true
+
+# Estabilidad: las fundas de Kino (sleeve_genre.lua) leen card.effect.center.config,
+# pero Card Sleeves 1.9.4 les pasa la propia funda (sin .effect) y el juego se
+# cierra al empezar la partida. Se acepta cualquiera de las dos formas.
+[[patches]]
+[patches.regex]
+target = '''=[SMODS kino "items/sleeve/sleeve_genre.lua"]'''
+pattern = 'card\.effect\.center\.config'
+position = "at"
+payload = "(card.effect and card.effect.center or card).config"
+
+# Estabilidad: las fundas de Kino (sleeve_bkinoween.lua) leen card.effect.center.config,
+# pero Card Sleeves 1.9.4 les pasa la propia funda (sin .effect) y el juego se
+# cierra al empezar la partida. Se acepta cualquiera de las dos formas.
+[[patches]]
+[patches.regex]
+target = '''=[SMODS kino "items/sleeve/sleeve_bkinoween.lua"]'''
+pattern = 'card\.effect\.center\.config'
+position = "at"
+payload = "(card.effect and card.effect.center or card).config"
+
+# Estabilidad: las fundas de Kino (sleeve_amovies.lua) leen card.effect.center.config,
+# pero Card Sleeves 1.9.4 les pasa la propia funda (sin .effect) y el juego se
+# cierra al empezar la partida. Se acepta cualquiera de las dos formas.
+[[patches]]
+[patches.regex]
+target = '''=[SMODS kino "items/sleeve/sleeve_amovies.lua"]'''
+pattern = 'card\.effect\.center\.config'
+position = "at"
+payload = "(card.effect and card.effect.center or card).config"
+
+# Estabilidad (Talisman): con Talisman el dinero es un «número grande» (tabla) y
+# LuaJIT no puede compararlo con un número normal. guiaes_num() (main.lua) lo
+# convierte antes de comparar. Sin estos parches el juego se cierra al pulsar
+# «Cambiar» en la tienda (ShopUndo) o al usar los objetos indicados.
+[[patches]]
+[patches.regex]
+target = '''=[SMODS ShopUndo "main.lua"]'''
+pattern = '\(G\.GAME\.dollars - \(G\.GAME\.bankrupt_at or 0\)\)'
+position = "at"
+payload = "(guiaes_num(G.GAME.dollars) - guiaes_num(G.GAME.bankrupt_at or 0))"
+
+# The Binding of Jimbo: comodines que comparan la puntuación con un porcentaje
+[[patches]]
+[patches.regex]
+target = '''=[SMODS TheBindingOfJimbo "src/items/0_rebirth/c61_90.lua"]'''
+pattern = 'G\.GAME\.chips / G\.GAME\.blind\.chips >='
+position = "at"
+payload = "guiaes_num(G.GAME.chips / G.GAME.blind.chips) >="
+
+[[patches]]
+[patches.regex]
+target = '''=[SMODS TheBindingOfJimbo "src/items/0_rebirth/k301_330.lua"]'''
+pattern = 'G\.GAME\.chips / G\.GAME\.blind\.chips >='
+position = "at"
+payload = "guiaes_num(G.GAME.chips / G.GAME.blind.chips) >="
+
+# Paperback: regalo E.G.O. del pecado «Orgullo» (¿se puede vender?)
+[[patches]]
+[patches.regex]
+target = '''=[SMODS paperback "utilities/hooks.lua"]'''
+pattern = '\(G\.GAME\.dollars \+ PB_UTIL\.EGO_GIFT_SINS\[self\.ability\.sin\]\[1\]\) >= G\.GAME\.bankrupt_at'
+position = "at"
+payload = "guiaes_num(G.GAME.dollars + PB_UTIL.EGO_GIFT_SINS[self.ability.sin][1]) >= guiaes_num(G.GAME.bankrupt_at)"
+
+# Multiplayer: botón de vender con la pegatina «Persistente»
+[[patches]]
+[patches.regex]
+target = '''=[SMODS Multiplayer "objects/stickers/1_persistent.lua"]'''
+pattern = 'ability\.mp_sell_price <= G\.GAME\.dollars'
+position = "at"
+payload = "ability.mp_sell_price <= guiaes_num(G.GAME.dollars)"
+
+# Multiplayer: ciega «El Brazo» del reglamento Release (compara el nivel de la mano)
+[[patches]]
+[patches.regex]
+target = '''=[SMODS Multiplayer "rulesets/release.lua"]'''
+pattern = 'G\.GAME\.hands\[handname\]\.level > 0'
+position = "at"
+payload = "guiaes_num(G.GAME.hands[handname].level) > 0"
+
+# Multiplayer: vista previa de puntuación (integración Preview)
+[[patches]]
+[patches.regex]
+target = '''=[SMODS Multiplayer "compatibility/Preview/EngineSimulate.lua"]'''
+pattern = 'G\.GAME\.hands\[played_hand_name\]\.level > 1'
+position = "at"
+payload = "guiaes_num(G.GAME.hands[played_hand_name].level) > 1"
+
+# Ortalab: la insignia del mod en la ciega del HUD supone que el elemento ya tiene
+# hijos; mientras el HUD se reconstruye no los tiene y el juego se cierra
+# («attempt to index a nil value» en util/artists.lua).
+[[patches]]
+[patches.pattern]
+target = '''=[SMODS ortalab "util/artists.lua"]'''
+pattern = "elseif e.children[1].children[1] then"
+position = "at"
+payload = "elseif e.children[1] and e.children[1].children[1] and e.children[1].children[1].children[2] and e.children[1].children[1].children[2].config.object and G.GAME.blind_badge then"
+match_indent = true
+
+# Estabilidad (Talisman): la puntuación y el tamaño de la ciega pueden ser a la vez
+# un número grande y un número normal (Talisman convierte unos valores y otros mods
+# escriben números normales). Compararlos directamente cierra el juego, así que se
+# comparan a través de guiaes_num().
+
+# TheBindingOfJimbo: pecados Envidia/Avaricia (puntuación frente a la ciega) (2 coincidencias)
+[[patches]]
+[patches.regex]
+target = '''=[SMODS TheBindingOfJimbo "src/blinds/0_sins.lua"]'''
+pattern = '''G\.GAME\.chips >= G\.GAME\.blind\.chips'''
+position = "at"
+payload = '''guiaes_num(G.GAME.chips) >= guiaes_num(G.GAME.blind.chips)'''
+
+# paperback: regalo E.G.O. «Paraguas raído» (1 coincidencia)
+[[patches]]
+[patches.regex]
+target = '''=[SMODS paperback "content/ego_gift/ragged_umbrella.lua"]'''
+pattern = '''SMODS\.calculate_round_score\(\) \+ G\.GAME\.chips > G\.GAME\.blind\.chips'''
+position = "at"
+payload = '''guiaes_num(SMODS.calculate_round_score() + G.GAME.chips) > guiaes_num(G.GAME.blind.chips)'''
+
+# Bakery: desbloqueo de amuleto con deuda de $100 (1 coincidencia)
+[[patches]]
+[patches.regex]
+target = '''=[SMODS Bakery "src/charm.lua"]'''
+pattern = '''\(\(G\.GAME or \{\}\)\.dollars or 0\) <= \-100'''
+position = "at"
+payload = '''guiaes_num((G.GAME or {}).dollars or 0) <= -100'''
+
+# Bunco: comodín que compara la mano con una fracción (1 coincidencia)
+[[patches]]
+[patches.regex]
+target = '''=[SMODS Bunco "Bunco.lua"]'''
+pattern = '''math\.floor\(hand_chips \* mult\) < \(temp_chips / card\.ability\.extra\.fraction\)'''
+position = "at"
+payload = '''guiaes_num(math.floor(hand_chips * mult)) < guiaes_num(temp_chips / card.ability.extra.fraction)'''
+
+# Bunco: animación de cambio de tamaño de la ciega (4 sitios) (4 coincidencias)
+[[patches]]
+[patches.regex]
+target = '''=[SMODS Bunco "Bunco.lua"]'''
+pattern = '''if G\.GAME\.blind\.chips < final_chips then'''
+position = "at"
+payload = '''if guiaes_num(G.GAME.blind.chips) < guiaes_num(final_chips) then'''
+
+# joker_evolution: evolución que exige doblar la ciega (1 coincidencia)
+[[patches]]
+[patches.regex]
+target = '''=[SMODS joker_evolution "data/jokers.lua"]'''
+pattern = '''G\.GAME\.chips \+ hand_chips \* mult > G\.GAME\.blind\.chips \* 2'''
+position = "at"
+payload = '''guiaes_num(G.GAME.chips + hand_chips * mult) > guiaes_num(G.GAME.blind.chips * 2)'''
+
+# kino: ciega que compara la mano con el doble de la ciega (1 coincidencia)
+[[patches]]
+[patches.regex]
+target = '''=[SMODS kino "items/blinds/blind_normal.lua"]'''
+pattern = '''mult \* hand_chips > 2 \* G\.GAME\.blind\.chips'''
+position = "at"
+payload = '''guiaes_num(mult * hand_chips) > guiaes_num(2 * G.GAME.blind.chips)'''
+
+# kino: Cristal Oscuro (1 coincidencia)
+[[patches]]
+[patches.regex]
+target = '''=[SMODS kino "items/jokers/dark_crystal.lua"]'''
+pattern = '''G\.GAME\.blind\.chips > G\.GAME\.chips'''
+position = "at"
+payload = '''guiaes_num(G.GAME.blind.chips) > guiaes_num(G.GAME.chips)'''
+
+# kino: Pantera Negra (1 coincidencia)
+[[patches]]
+[patches.regex]
+target = '''=[SMODS kino "items/jokers/black_panther.lua"]'''
+pattern = '''card\.ability\.extra\.stored_score \+ \(mult \* hand_chips\) >= Kino\.black_panther_goal\(G\.GAME\.round_resets\.ante\)'''
+position = "at"
+payload = '''guiaes_num(card.ability.extra.stored_score + (mult * hand_chips)) >= guiaes_num(Kino.black_panther_goal(G.GAME.round_resets.ante))'''
+
+# LostEdition: Vandalismo (1 coincidencia)
+[[patches]]
+[patches.regex]
+target = '''=[SMODS LostEdition "items/jokers/vandalism.lua"]'''
+pattern = '''G\.GAME\.blind\.chips > final_chips'''
+position = "at"
+payload = '''guiaes_num(G.GAME.blind.chips) > guiaes_num(final_chips)'''
+
+# Bunco + Steamodded 26.829: el parche de Bunco «Info queue for consumables 2/2»
+# busca el primer «end» de fin de línea tras la descripción de la edición y, con el
+# código nuevo de Steamodded, cierra el bloque demasiado pronto: la variable t queda
+# fuera de su ámbito y el juego se cierra al mostrar la descripción de cualquier
+# carta con edición (brillante, holográfica, policromada...). Se recoloca ese «end».
+# Si Bunco no está activo, el patrón no coincide y no se toca nada.
+[[patches]]
+[patches.regex]
+target = "functions/common_events.lua"
+position = "at"
+pattern = ''' end[ \t]+info_queue\[#info_queue \+ 1\] = t\n[ \t]*if G\.P_CENTERS\['e_'\.\.ed_key\]\.loc_vars and type\(G\.P_CENTERS\['e_'\.\.ed_key\]\.loc_vars\) == 'function' then\n[ \t]*local res = G\.P_CENTERS\['e_'\.\.ed_key\]:loc_vars\(info_queue, card\) or \{\}\n[ \t]*t\.vars = res\.vars\n[ \t]*t\.key = res\.key or t\.key\n[ \t]*t\.set = res\.set or t\.set\n[ \t]*end\n'''
+payload = '''info_queue[#info_queue + 1] = t
+if G.P_CENTERS['e_'..ed_key].loc_vars and type(G.P_CENTERS['e_'..ed_key].loc_vars) == 'function' then
+    local res = G.P_CENTERS['e_'..ed_key]:loc_vars(info_queue, card) or {}
+    t.vars = res.vars
+    t.key = res.key or t.key
+    t.set = res.set or t.set
+end
+end
+'''
+
+# Talisman + Steamodded 26.829: Steamodded cambió esta línea y el parche de Talisman
+# que la protegía ya no coincide. Al terminar cada mano se compara la puntuación con
+# la ciega y, si uno es número grande y el otro no, el juego se cierra.
+[[patches]]
+[patches.regex]
+target = "functions/state_events.lua"
+pattern = '''SMODS\.last_hand_oneshot = SMODS\.last_hand_score >= G\.GAME\.blind\.chips'''
+position = "at"
+payload = '''SMODS.last_hand_oneshot = guiaes_num(SMODS.last_hand_score) >= guiaes_num(G.GAME.blind.chips)'''
+
+# Talisman: fin de ronda con «Escudo» (solo comprueba el tipo de la puntuación)
+[[patches]]
+[patches.regex]
+target = "functions/state_events.lua"
+pattern = '''if G\.GAME\.chips - G\.GAME\.blind\.chips >= 0 then'''
+position = "at"
+payload = '''if guiaes_num(G.GAME.chips - G.GAME.blind.chips) >= 0 then'''
+
+# Talisman: animación de reducción de la ciega en el juego base parcheado
+[[patches]]
+[patches.regex]
+target = "blind.lua"
+pattern = '''if G\.GAME\.blind\.chips > final_chips then'''
+position = "at"
+payload = '''if guiaes_num(G.GAME.blind.chips) > guiaes_num(final_chips) then'''
+
+# Talisman: vista previa de Multiplayer, ciega «El Brazo»
+[[patches]]
+[patches.regex]
+target = "functions/common_events.lua"
+pattern = '''if G\.GAME\.hands\[played_hand_name\]\.level > 1 then'''
+position = "at"
+payload = '''if guiaes_num(G.GAME.hands[played_hand_name].level) > 1 then'''
+
+# Talisman: «Gato negro» de Ortalab (fichas de la mano frente a las actuales)
+[[patches]]
+[patches.regex]
+target = '''=[SMODS _ "src/utils.lua"]'''
+pattern = '''hand_chips and hand_chips > current_chips and next\(SMODS\.find_card\('j_ortalab_black_cat'\)\)'''
+position = "at"
+payload = '''hand_chips and guiaes_num(hand_chips) > guiaes_num(current_chips) and next(SMODS.find_card('j_ortalab_black_cat'))'''
+
+# guiaes_num() disponible desde el arranque del juego (los parches de arriba la usan)
+[[patches]]
+[patches.pattern]
+target = "main.lua"
+pattern = "function love.load()"
+position = "before"
+payload = '''
+function guiaes_num(valor)
+    if type(valor) == "table" and type(to_number) == "function" then return to_number(valor) end
+    return valor
+end
+'''
+match_indent = true
+
+# Multiplayer (TheOrder): al elegir al azar entre una lista VACÍA de comodines o
+# cartas, TheOrder lee keys[1].k y el juego se cierra. Con la lista vacía se deja
+# que lo resuelva el juego base (devuelve nil, como siempre).
+[[patches]]
+[patches.pattern]
+target = '''=[SMODS Multiplayer "compatibility/TheOrder.lua"]'''
+pattern = "if is_joker or is_p_card then"
+position = "at"
+payload = "if (is_joker or is_p_card) and next(_t) ~= nil then"
+match_indent = true
+
+# Pokermon y The Binding of Jimbo: créditos de artista en la ventana emergente de
+# una carta. Si la etiqueta o el sello no está registrado (etiquetas de otros mods
+# o de los reglamentos de Multiplayer), el juego se cierra al pasar el ratón.
+[[patches]]
+[patches.regex]
+target = '''=[SMODS Pokermon "pokeui.lua"]'''
+pattern = '''local proto = G\.P_TAGS\[tag\.key\]'''
+position = "at"
+payload = '''local proto = G.P_TAGS[tag.key] or {}'''
+
+[[patches]]
+[patches.regex]
+target = '''=[SMODS Pokermon "pokeui.lua"]'''
+pattern = '''local seal = G\.P_SEALS\[card\.seal\]'''
+position = "at"
+payload = '''local seal = G.P_SEALS[card.seal] or {}'''
+
+[[patches]]
+[patches.regex]
+target = '''=[SMODS TheBindingOfJimbo "src/ui/artist.lua"]'''
+pattern = '''local proto = G\.P_TAGS\[tag\.key\]'''
+position = "at"
+payload = '''local proto = G.P_TAGS[tag.key] or {}'''
+
+[[patches]]
+[patches.regex]
+target = '''=[SMODS TheBindingOfJimbo "src/ui/artist.lua"]'''
+pattern = '''local seal = G\.P_SEALS\[card\.seal\]'''
+position = "at"
+payload = '''local seal = G.P_SEALS[card.seal] or {}'''

@@ -18,7 +18,12 @@ return {
                     "{C:inactive}No modifica los archivos de otros mods:{}",
                     "{C:inactive}las traducciones sobreviven a sus actualizaciones.{}",
                     " ",
-                    "{C:inactive}v0.2 · Contacto: Instagram @_shun._05{}",
+                    "{C:green}Estabilidad:{} corrige más de 30 cierres",
+                    "del juego en Cryptid, Kino, Talisman y más.",
+                    "{C:green}Rendimiento:{} puntuar es unas 30 veces",
+                    "más rápido (adiós a «Calculando...»).",
+                    " ",
+                    "{C:inactive}v0.3 · Contacto: Instagram @_shun._05{}",
                 },
             },
             Steamodded = {
@@ -385,7 +390,7 @@ return {
             guiaes_titulo = "Tus mods instalados",
             guiaes_pagina = "Página",
             guiaes_contacto = "Contacto (Instagram)",
-            guiaes_version = "Guía y Traducción ES v0.2",
+            guiaes_version = "Guía y Traducción ES v0.3",
             guiaes_ayuda = "Pulsa un mod en la lista de Mods para ver su ficha completa",
             guiaes_sin_resumen = "Sin resumen disponible",
 

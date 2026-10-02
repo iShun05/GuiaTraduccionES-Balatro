@@ -2,7 +2,7 @@
 
 Mod para Balatro (Steamodded) que **explica en español para qué sirve cada mod instalado**, recomienda qué mods activar y cómo combinarlos, y **traduce al español** todo lo que los demás mods dejaron en inglés, sin modificar sus archivos (las traducciones sobreviven a sus actualizaciones).
 
-- **Versión actual:** v0.2
+- **Versión actual:** v0.3
 - **Plataforma:** Balatro (macOS / Windows) con Steamodded ≥ 1.0.0 y Lovely
 
 ## Funciones principales
@@ -10,6 +10,8 @@ Mod para Balatro (Steamodded) que **explica en español para qué sirve cada mod
 - **Pestañas del mod:** *Guía* (resumen de todos los mods instalados), *Recomendados*, *Combina bien* y *Evita*.
 - **Traducción:** 4.615 textos de 20+ mods (Kino, Multiplayer, Cryptid, Pokermon, Ortalab, The Binding of Jimbo, Bakery, Handy, Extra Credit, Prism...).
 - **Textos fijos:** traduce al vuelo los textos en inglés escritos directamente en el código de otros mods.
+- **Rendimiento (v0.3):** «mejoras cuánticas» bajo demanda: cada mano pasa de 7-14 s («Calculando...») a 0,2-0,5 s sin cambiar ningún resultado.
+- **Estabilidad (v0.3):** corrige cierres reales del juego en otros mods mediante parches de Lovely (`lovely.toml`) y protecciones en `main.lua`: reverso de cartas de Cryptid, fundas de Kino con Card Sleeves 1.9.4, zonas de cartas destruidas (Kino/Bakery), números grandes de Talisman (20 comparaciones en Shop Undo, The Binding of Jimbo, Paperback, Multiplayer, Bunco, Bakery, Kino, Joker Evolution y Lost Edition) insignia de ciega de Ortalab, descripción de ediciones de Bunco y cartas forzadas inexistentes o prohibidas.
 - **Compatibilidad especial:** Handy (sistema de idiomas propio), Malverk/Dark Mode (textos escritos tarde) y Extra Credit (textos incrustados).
 
 ## Tecnología
@@ -20,14 +22,15 @@ Mod para Balatro (Steamodded) que **explica en español para qué sirve cada mod
 ```
 GuiaTraduccionES/
 ├── manifest.json            # metadatos del mod (prioridad máxima: carga el último)
-├── main.lua                 # reaplicación de idiomas, Handy, textos fijos y pestañas
+├── main.lua                 # reaplicación de idiomas, Handy, estabilidad, textos fijos y pestañas
+├── lovely.toml              # parches de estabilidad sobre otros mods (Lovely)
 ├── recomendaciones.lua      # contenido de Recomendados / Combina bien / Evita
 ├── textos_fijos.lua         # textos fijos en inglés -> español
 ├── localization/es_ES.lua   # fichas de los mods y textos de la guía
 ├── localization/<mod>/      # traducciones generadas (no editar a mano)
 ├── handy/es_ES.lua          # traducción de Handy (generada)
 ├── traducciones/*.tsv       # fuente de todas las traducciones
-├── herramientas/            # generar.py, icono.py
+├── herramientas/            # generar.py, icono.py, .luarc.json
 └── assets/                  # icono monoline (1x, 2x e iconos/)
 ```
 
@@ -36,12 +39,13 @@ GuiaTraduccionES/
 2. Si editas un TSV: `python3 herramientas/generar.py`.
 3. Pon el juego en **Español (España)** y reinícialo.
 
-Para volver a una versión anterior: `git checkout v0.2`.
+Para volver a una versión anterior: `git checkout v0.3`.
 
 ## Versiones y código fuente
 | Versión | Fecha | Cambios | Código |
 |---|---|---|---|
-| [`v0.2`](https://github.com/iShun05/GuiaTraduccionES-Balatro/releases/tag/v0.2) **(actual)** | 2026-10-02 | Recomendaciones, arreglo Fundas + Galdur, 9 mods nuevos traducidos | [Ver código](https://github.com/iShun05/GuiaTraduccionES-Balatro/tree/v0.2) · [ZIP](https://github.com/iShun05/GuiaTraduccionES-Balatro/archive/refs/tags/v0.2.zip) |
+| [`v0.3`](https://github.com/iShun05/GuiaTraduccionES-Balatro/releases/tag/v0.3) **(actual)** | 2026-10-02 | Rendimiento x30 al puntuar y más de 30 cierres del juego corregidos | [Ver código](https://github.com/iShun05/GuiaTraduccionES-Balatro/tree/v0.3) · [ZIP](https://github.com/iShun05/GuiaTraduccionES-Balatro/archive/refs/tags/v0.3.zip) |
+| [`v0.2`](https://github.com/iShun05/GuiaTraduccionES-Balatro/releases/tag/v0.2) | 2026-10-02 | Recomendaciones, arreglo Fundas + Galdur, 9 mods nuevos traducidos | [Ver código](https://github.com/iShun05/GuiaTraduccionES-Balatro/tree/v0.2) · [ZIP](https://github.com/iShun05/GuiaTraduccionES-Balatro/archive/refs/tags/v0.2.zip) |
 | v0.1 | 2026-10-01 | Guía de mods y primera traducción (incluida en el código de v0.2) | — |
 
 ## Contacto

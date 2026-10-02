@@ -25,7 +25,7 @@ return {
                 lineas = {
                     "Steamodded y Lovely: cargan todos los mods",
                     "Talisman: números gigantes; Cryptid no funciona sin él",
-                    "Guía y Traducción ES: esta guía y todo el juego en español",
+                    "Guía y Traducción ES: español, 30+ cierres corregidos y puntuar 30x más rápido",
                 },
             },
             {
