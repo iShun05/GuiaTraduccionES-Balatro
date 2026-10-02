@@ -1,0 +1,150 @@
+-- Textos en inglés escritos directamente en el código de otros mods
+-- (no pasan por sus archivos de idioma). Se traducen al vuelo, solo por
+-- coincidencia EXACTA, cuando el juego crea el elemento de interfaz.
+-- Clave: texto original exacto · Valor: texto en español.
+return {
+    -- Solatro (solitario del menú principal)
+    ["YOU WIN!"] = "¡HAS GANADO!",
+    ["Moves: "] = "Movimientos: ",
+    ["NEW DEAL"] = "NUEVA PARTIDA",
+    ["MENU"] = "MENÚ",
+    ["PLAY"] = "JUGAR",
+    ["solatro mod by bryanthaboi / bois club games"] = "mod Solatro de bryanthaboi / bois club games",
+
+    -- Multiplayer
+    ["Enable Score Preview"] = "Activar vista previa de puntuación",
+    ["Enable Money Preview"] = "Activar vista previa de dinero",
+    ["Hide Preview if Any Card is Face-Down"] = "Ocultar vista previa si hay cartas bocabajo",
+    ["Show active decks during run"] = "Mostrar barajas activas durante la partida",
+    ["How to update"] = "Cómo actualizar",
+    ["Continue anyway"] = "Continuar igualmente",
+    ["Grab the launcher"] = "Descargar el lanzador",
+    ["OK, I'll risk it"] = "Vale, me arriesgo",
+    ["MUTATORS"] = "MUTADORES",
+    ["Randomize"] = "Aleatorio",
+    ["Blind Random"] = "Aleatorio a ciegas",
+    ["Inherit"] = "Heredar",
+    ["Legacy"] = "Antiguo",
+    ["Inflation"] = "Inflación",
+    ["No Interest"] = "Sin intereses",
+    ["Discard Tax"] = "Impuesto al descarte",
+    ["Frugal"] = "Frugal",
+    ["Kind Wraith"] = "Espectro amable",
+    ["Reward Draft"] = "Selección de recompensas",
+    ["Blind Poker"] = "Póker a ciegas",
+    ["Dead Cards"] = "Cartas muertas",
+    ["No Takebacks"] = "Sin vuelta atrás",
+    ["Heavy Pockets"] = "Bolsillos pesados",
+    ["Shared Pockets"] = "Bolsillos compartidos",
+    ["Instability"] = "Inestabilidad",
+    ["Rubber Band"] = "Goma elástica",
+    ["No Easy Money"] = "Sin dinero fácil",
+    ["No Uncommons"] = "Sin poco comunes",
+    ["No Red Seals"] = "Sin sellos rojos",
+    ["Bigger Shop"] = "Tienda más grande",
+    ["Cash Ceiling"] = "Techo de dinero",
+    ["Score Tax"] = "Impuesto a la puntuación",
+    ["Glass Cannon"] = "Cañón de cristal",
+    ["Small World"] = "Mundo pequeño",
+    ["Spartan"] = "Espartano",
+    ["Pricey Packs"] = "Paquetes caros",
+    ["Polymorph"] = "Polimorfia",
+    ["Content set"] = "Conjunto de contenido",
+    ["Playing as: "] = "Jugando como: ",
+    ["Play Match"] = "Jugar partida",
+    ["Select a match"] = "Elige una partida",
+    ["Clear Replay"] = "Borrar repetición",
+    ["Modifiers..."] = "Modificadores...",
+    ["A new weekly ruleset is available!"] = "¡Hay un nuevo conjunto de reglas semanal!",
+    ["CALCULATING"] = "CALCULANDO",
+    ["Calculate Score"] = "Calcular puntuación",
+
+    -- Card Sleeves / Galdur / Cryptid / Ortalab / Six Suits / Lost Edition
+    ["Update Galdur to v"] = "Actualiza Galdur a la v",
+    ["Zen Mode"] = "Modo zen",
+    ["Confirm"] = "Confirmar",
+    ["Use these cards for a bonus!"] = "¡Usa estas cartas para obtener una bonificación!",
+    ["Allow All Suits "] = "Permitir todos los palos ",
+    ["JOKER SLOTS FULL"] = "ESPACIOS DE COMODÍN LLENOS",
+
+    -- Joker Evolution (ajustes)
+    ["Enable Original Evolutions"] = "Activar evoluciones originales",
+    ["Enable Consumables"] = "Activar consumibles",
+    ["Enable Extra Jokers (ex: Collector Joker)"] = "Activar comodines extra (p. ej.: Comodín coleccionista)",
+    ["Enable poll restriction"] = "Activar restricción de aparición",
+
+    -- JokerDisplay
+    ["Unknown"] = "Desconocido",
+
+    -- Kino
+    ["Current Joker"] = "Comodín actual",
+    ["Content Package"] = "Paquete de contenido",
+    ["Content Packages"] = "Paquetes de contenido",
+    ["Playsets"] = "Conjuntos de juego",
+    ["Counters"] = "Contadores",
+    ["Spells"] = "Hechizos",
+    ["Spellbook"] = "Libro de hechizos",
+    ["A spell is Cast when a spellcaster card or joker is triggered"] = "Un hechizo se lanza cuando se activa una carta o un comodín lanzahechizos",
+    ["Abductions"] = "Abducciones",
+    ["In-progress"] = "En curso",
+    ["Completed"] = "Completado",
+    ["Timer"] = "Temporizador",
+    ["Want to improve Kino? Give feedback here: "] = "¿Quieres mejorar Kino? Deja tu opinión aquí: ",
+    ["Click here to give feedback on Balatro Goes Kino"] = "Haz clic aquí para opinar sobre Balatro Goes Kino",
+
+    -- Malverk
+    ["Page "] = "Página ",
+
+    -- Shop Undo
+    ["Undo steps remembered"] = "Pasos de deshacer recordados",
+    ["Refund the reroll cost"] = "Reembolsar el coste del cambio",
+    ["Sell bought cards back"] = "Devolver las cartas compradas",
+    ["Block used-consumable farming"] = "Bloquear el abuso de consumibles usados",
+    ["Right-click Reroll to undo"] = "Clic derecho en Cambiar para deshacer",
+    ["Rebind key"] = "Cambiar tecla",
+
+    -- Scrollable Descriptions
+    ["Enter "] = "Intro ",
+    ["Move Distance"] = "Distancia de movimiento",
+    ["Keybinds"] = "Teclas",
+
+    -- Too Many Jokers
+    ["Press T to access Too Many Jokers"] = "Pulsa T para abrir Too Many Jokers",
+    ["Start typing to focus searchbar..."] = "Empieza a escribir para buscar...",
+    ["Close"] = "Cerrar",
+    ["Type keywords, separated by commas"] = "Escribe palabras clave separadas por comas",
+    ["Number of rows"] = "Número de filas",
+    ["Number of columns"] = "Número de columnas",
+    ["Card size"] = "Tamaño de carta",
+    ["Scroll sensitivity"] = "Sensibilidad del desplazamiento",
+    ["Close TMJ when 'esc' is pressed"] = "Cerrar TMJ al pulsar «Esc»",
+    ["Scroll TMJ by a full page at a time"] = "Desplazar TMJ página a página",
+    ["Scroll TMJ using arrow keys"] = "Desplazar TMJ con las flechas",
+    ["Autofocus TMJ textbox on type"] = "Activar la búsqueda de TMJ al escribir",
+    ["Hide cards that are hidden in collection"] = "Ocultar las cartas ocultas en la colección",
+    ["Disable cheats"] = "Desactivar trucos",
+
+    -- Extra Credit
+    ["Interns"] = "Becarios",
+    ["Project Lead: CampfireCollective"] = "Dirección del proyecto: CampfireCollective",
+
+    -- Pokermon
+    ["Energy: "] = "Energía: ",
+    ["Sell Value: "] = "Valor de venta: ",
+    ["XMult: "] = "Multi X: ",
+    ["Mult: "] = "Multi: ",
+    ["Max: "] = "Máx.: ",
+    ["Min: "] = "Mín.: ",
+    ["Hands Remaining: "] = "Manos restantes: ",
+    ["End of Round"] = "Final de la ronda",
+    ["Last Played: "] = "Última jugada: ",
+    ["Herd"] = "Manada",
+    ["Energy Options"] = "Opciones de energía",
+    ["Misc Options"] = "Otras opciones",
+    ["Content Options"] = "Opciones de contenido",
+    ["Visual Options"] = "Opciones visuales",
+    ["Joker Pool Options"] = "Opciones de comodines",
+    ["Individual Sprites"] = "Sprites individuales",
+    ["Main Menu Logo"] = "Logo del menú principal",
+    ["Pokermon Logo"] = "Logo de Pokermon",
+}

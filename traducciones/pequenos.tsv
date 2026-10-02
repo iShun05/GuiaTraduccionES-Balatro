@@ -1,0 +1,153 @@
+S	.misc.dictionary.sleeve_normal_effect_desc	Algunas fundas tienen efectos únicos al combinarse con barajas concretas
+S	.misc.dictionary.sleeve_normal_effects	Efectos por defecto
+S	.misc.dictionary.sleeve_stacked_effect_desc	Haz clic izquierdo o derecho en una funda para alternar entre los efectos combinados
+S	.misc.dictionary.sleeve_stacked_effects	Efectos combinados
+S	.misc.dictionary.carto_blinds_info_current	Actual
+S	.misc.dictionary.carto_blinds_info_extra	Historial
+S	.misc.dictionary.carto_blinds_info_setting	Mostrar pestaña de información de ciegas
+S	.misc.dictionary.carto_blinds_info_title	Historial de ciegas jefe
+S	.misc.dictionary.carto_deck_view_stack_compact	Apilar cartas
+S	.misc.dictionary.carto_deck_view_stack_x_color	Color\032
+S	.misc.dictionary.carto_highlight_played_hands	Resaltar manos jugadas esta ronda
+S	.misc.dictionary.carto_jokers_jiggle	Hacer que algunos comodines originales se muevan
+S	.misc.dictionary.carto_peek_shop_1	Ver
+S	.misc.dictionary.carto_peek_shop_2	tienda
+S	.misc.dictionary.carto_peek_shop_setting	Ver la tienda desde los paquetes potenciadores
+S	.misc.dictionary.carto_peek_shop_vanilla_label	Tienda
+S	.misc.dictionary.carto_score_highest	Puntuación más alta
+S	.misc.dictionary.carto_score_last	Última mano
+S	.descriptions.Joker.j_evo_astronaut.name	Comodín astronauta
+A	.descriptions.Joker.j_evo_astronaut.text	{C:green}#1# en #2#{} probabilidades de / aumentar el nivel de tu {C:attention}mano de póker / más jugada{} al anotar
+S	.descriptions.Joker.j_evo_bordel.name	Bordel el Bufón
+A	.descriptions.Joker.j_evo_bordel.text	En cada ronda, se reembolsan / los próximos {C:attention}3{} {C:green}cambios{} / {C:inactive}(Actual: {C:green}#1#{C:inactive})
+S	.descriptions.Joker.j_evo_clenched_fist.name	Puño cerrado
+A	.descriptions.Joker.j_evo_clenched_fist.text	Suma al multi el {C:attention}doble{} de la / categoría de la carta {C:attention}más alta / que tengas en la mano
+S	.descriptions.Joker.j_evo_rendezvous.name	Rendez-Vous
+A	.descriptions.Joker.j_evo_rendezvous.text	Si la {C:attention}mano de póker{} contiene / un {C:attention}#1#{}, crea una carta / {C:spectral}espectral{} aleatoria / {C:inactive}(Debe haber espacio)
+S	.descriptions.Joker.j_evo_tarotologist.name	Tarotólogo
+A	.descriptions.Joker.j_evo_tarotologist.text	Crea {C:attention}2{} cartas de {C:tarot}tarot / cuando se selecciona la {C:attention}ciega / {C:inactive}(Debe haber espacio)
+S	.descriptions.Joker.j_evo_vip_card.name	Tarjeta VIP
+A	.descriptions.Joker.j_evo_vip_card.text	Multi {X:red,C:white} X#1# {} cada / {C:attention}#2#{} manos jugadas / {C:inactive}#3#
+S	.misc.dictionary.jdis_extras	Extras
+S	.descriptions.Planet.c_six_kepler.name	Kepler
+S	.descriptions.Planet.c_six_trappist.name	Trappist
+S	.talisman_bignum	BigNum (ee308)
+S	.talisman_omeganum	OmegaNum
+S	.talisman_vanilla	Original (e308)
+S	.descriptions.Edition.e_losted_plasma.name	Plasma
+S	.descriptions.Joker.j_losted_big_bang.name	Big Bang
+S	.descriptions.Joker.j_losted_cosmos.name	Cosmos
+S	.descriptions.Joker.j_losted_error.name	Error
+S	.descriptions.Joker.j_losted_mitosis.name	Mitosis
+S	.descriptions.Joker.j_losted_toc_toc.name	Toc toc
+S	.misc.dictionary.le_credits_artists	Artistas
+S	.misc.dictionary.le_credits_beta	Probadores beta
+S	.misc.dictionary.le_credits_coding	Programación
+S	.misc.dictionary.le_credits_direction	Dirección
+S	.misc.dictionary.le_credits_music	Música
+S	.misc.dictionary.le_credits_thanks	Agradecimientos especiales
+S	.misc.labels.losted_medieval	Medieval
+S	.misc.labels.losted_plasma	Plasma
+S	.misc.v_dictionary.a_xchips_minus	-X#1# fichas
+A	.descriptions.Back.b_paperback_antique.unlock	Descubre todas las cartas / de {C:paperback_minor_arcana,E:1}arcanos menores{}
+A	.descriptions.Back.b_paperback_dreamer.unlock	Gana una partida con cualquier / baraja en dificultad / {V:1}#1#{} o superior
+A	.descriptions.Back.b_paperback_passionate.unlock	Gana una partida con cualquier / baraja en dificultad / {V:1}#1#{} o superior
+A	.descriptions.Back.b_paperback_proud.unlock	Juega un {C:attention}Espectro{}
+A	.descriptions.Back.b_paperback_silver.unlock	Descubre {C:attention}#1#{} cartas / de {C:paperback_minor_arcana,E:1}arcanos menores{}
+S	.descriptions.Joker.j_paperback_ampersand.name	&
+A	.descriptions.Joker.j_paperback_ampersand.text	Si la mano anotada contiene palos / {C:paperback_dark_suit}oscuros{} y {C:paperback_light_suit}claros{}, reactiva / la primera de cada uno {C:attention}#1#{} vez
+S	.descriptions.Joker.j_paperback_big_misser.name	El gran fallón
+S	.descriptions.Joker.j_paperback_blue_star.name	Estrella azul
+S	.descriptions.Joker.j_paperback_book_of_life.name	Libro de la vida
+S	.descriptions.Joker.j_paperback_first_contact.name	Primer contacto
+S	.descriptions.Joker.j_paperback_jimbos_joyous_joker_jamboree.name	La juerga jovial de los comodines de Jimbo
+S	.descriptions.Joker.j_paperback_joker_duty.name	Deber de comodín
+S	.descriptions.Joker.j_paperback_jokers_11.name	Los 11 de Joker
+S	.descriptions.Joker.j_paperback_mind_electric.name	La mente eléctrica
+S	.descriptions.Joker.j_paperback_moon_waltz.name	Vals lunar
+S	.descriptions.Joker.j_paperback_moving_out.name	Mudanza
+S	.descriptions.Joker.j_paperback_the_batter.name	El Bateador
+S	.descriptions.Joker.j_paperback_the_wonder_of_you.name	La maravilla de ti
+S	.descriptions.Joker.j_paperback_tropic_birds.name	Aves tropicales
+S	.descriptions.Joker.j_paperback_tutor.name	Tutor
+S	.descriptions.Joker.j_paperback_yacht_dice.name	Dados de yate
+S	.descriptions.Joker.j_paperback_attacking_vertical.name	Ataque vertical
+S	.descriptions.Joker.j_paperback_derecho.name	Derecho
+S	.descriptions.Joker.j_paperback_paranoia.name	Paranoia
+S	.descriptions.Other.paperback_illusion_clips.name	Función añadida
+A	.descriptions.Other.paperback_illusion_clips.text	Las {C:attention}cartas de juego{} también / pueden tener un {C:attention}clip{}
+A	.descriptions.Other.perma_paperback_h_plus_odds.text	{C:green}#1#{} probabilidades si está en la mano
+A	.descriptions.Other.perma_paperback_plus_odds.text	{C:green}#1#{} probabilidades al jugarse y anotar
+S	.descriptions.Partner.pnr_paperback_virtual.name	Virtual
+A	.descriptions.Sleeve.sleeve_paperback_shimmering_buff.text	Por determinar
+S	.descriptions.paperback_minor_arcana.c_paperback_king_of_swords_bunc.name	Rey de espadas
+A	.descriptions.paperback_minor_arcana.c_paperback_king_of_swords_bunc.text	Quita todas las pegatinas salvo {C:paperback_eternal}Eterno{} / del comodín seleccionado
+S	.misc.dictionary.paperback_determination_ex	¡NGAAAHH!
+S	.misc.dictionary.paperback_punch_card_ex	¡Salto equivocado!
+S	.misc.dictionary.paperback_ui_upgrade_indicators	Mostrar indicadores de mejora
+S	.misc.dictionary.paperback_warning_ex	¡Cuidado!
+S	.misc.dictionary.paperback_watch_ex	¡Atento!
+S	.misc.v_dictionary.paperback_a_ante	Apuesta inicial #1#
+S	.descriptions.Enhanced.m_bunc_cracker.name	Carta petardo
+A	.descriptions.Enhanced.m_bunc_cracker.text	{C:attention}Al descartarla{}, la carta / se juega y después se destruye
+S	.descriptions.Joker.j_bunc_cassette_a.name	Casete (cara A)
+A	.descriptions.Joker.j_bunc_cassette_a.text	Las cartas de {C:attention}palo claro / dan {C:chips}+#1#{} fichas cuando anotan
+S	.descriptions.Joker.j_bunc_cassette_b.name	Casete (cara B)
+A	.descriptions.Joker.j_bunc_cassette_b.text	Las cartas de {C:attention}palo oscuro / dan {C:mult}+#2#{} multi cuando anotan
+A	.descriptions.Joker.j_bunc_cassette_extra.text	{C:inactive}Al descartar, da la vuelta a este comodín
+S	.descriptions.Joker.j_bunc_conquest.name	Conquista
+S	.descriptions.Joker.j_bunc_fondue.name	Fondue
+S	.descriptions.Joker.j_bunc_hardtack.name	Galleta marinera
+A	.descriptions.Joker.j_bunc_hardtack.text	Las {C:attention}cartas petardo{} ya / no se destruyen / al descartarlas
+S	.descriptions.Joker.j_bunc_juggalo.name	Juggalo
+S	.descriptions.Joker.j_bunc_luchador.name	Luchador
+S	.descriptions.Joker.j_bunc_pica.name	Comodín pica
+A	.descriptions.Joker.j_bunc_pica.text	Cuando se descarta una / {C:attention}carta petardo{}, se juegan / todas las cartas descartadas
+S	.descriptions.Joker.j_bunc_rasta.name	Rasta
+S	.descriptions.Joker.j_bunc_rigoletto.name	Rigoletto
+S	.descriptions.Joker.j_bunc_robot.name	Robot
+S	.descriptions.Joker.j_bunc_roygbiv.name	Roy G. Biv
+S	.descriptions.Joker.j_bunc_tangram.name	Tangram
+S	.descriptions.Other.bunc_dark_suits.name	Palos oscuros
+A	.descriptions.Other.bunc_dark_suits.text	{C:spades}Picas{} y {C:clubs}tréboles
+S	.descriptions.Other.bunc_dark_suits_exotic.name	Palos oscuros
+A	.descriptions.Other.bunc_dark_suits_exotic.text	{C:spades}Picas{}, {C:clubs}tréboles / y {C:bunc_halberds}alabardas
+S	.descriptions.Other.bunc_light_suits.name	Palos claros
+A	.descriptions.Other.bunc_light_suits.text	{C:hearts}Corazones{} y {C:diamonds}diamantes
+S	.descriptions.Other.bunc_light_suits_exotic.name	Palos claros
+A	.descriptions.Other.bunc_light_suits_exotic.text	{C:hearts}Corazones{}, {C:diamonds}diamantes / y {C:bunc_fleurons}florones
+S	.descriptions.Other.bunc_linked_group.name	Grupo enlazado
+A	.descriptions.Other.bunc_linked_group.text	Las cartas enlazadas del grupo / se roban, se seleccionan / y se destruyen {C:attention}juntas
+S	.descriptions.Spectral.c_bunc_aura.name	Aura
+A	.descriptions.Spectral.c_bunc_aura.text	Agrega efectos de {C:dark_edition}laminado{}, {C:dark_edition}holográfico{}, / {C:dark_edition}polícromo{} o {C:dark_edition}purpurina{} a / {C:attention}1{} carta de tu mano seleccionada
+S	.descriptions.Tag.tag_bunc_d_six.name	Etiqueta D6
+A	.descriptions.Tag.tag_bunc_d_six.text	Añade un {C:green}cambio gratis / a la próxima tienda
+S	.descriptions.Tag.tag_bunc_shopping.name	Etiqueta de compras
+A	.descriptions.Tag.tag_bunc_shopping.text	Da {C:attention}1{} {C:green}cambio{} gratis / en la tienda
+S	.descriptions.Tarot.c_bunc_adjustment.name	El ajuste
+A	.descriptions.Tarot.c_bunc_adjustment.text	Mejora hasta {C:attention}#1#{} / cartas seleccionadas a / {C:attention}#2#
+A	.descriptions.Tarot.c_bunc_adjustment.unlock	Descubre al menos / {C:attention}#1#{} objetos de / tu colección
+A	.descriptions.Tarot.c_bunc_art.unlock	Descubre al menos / {C:attention}#1#{} objetos de / tu colección
+S	.descriptions.Tarot.c_bunc_lust.name	La lujuria
+A	.descriptions.Tarot.c_bunc_lust.text	Da {C:money}$#1#{} por cada / carta de juego que / tengas en la mano {C:inactive}(Máx. {C:money}$#2#{C:inactive}) / {C:inactive}(Actual: {C:money}$#3#{C:inactive})
+A	.descriptions.Tarot.c_bunc_lust.unlock	Descubre al menos / {C:attention}#1#{} objetos de / tu colección
+S	.descriptions.Tarot.c_bunc_universe.name	El universo
+A	.descriptions.Tarot.c_bunc_universe.text	{C:attention}Aleatoriza{} el palo, la categoría, / la mejora, la edición y el sello / de hasta {C:attention}#1#{} cartas / seleccionadas
+A	.descriptions.Tarot.c_bunc_universe.unlock	Descubre al menos / {C:attention}#1#{} objetos de / tu colección
+S	.descriptions.Tarot.c_bunc_wheel_of_fortune.name	La rueda de la fortuna
+A	.descriptions.Tarot.c_bunc_wheel_of_fortune.text	{C:green}#1# en #2#{} probabilidades de añadir / la edición {C:dark_edition}laminada{}, {C:dark_edition}holográfica{}, / {C:dark_edition}polícroma{} o {C:dark_edition}purpurina{} / a un {C:attention}comodín{} aleatorio
+S	.descriptions.Voucher.v_bunc_polybius.name	Polybius
+S	.misc.collab_palettes.default_Clubs.3	Contraste renovado
+S	.misc.collab_palettes.default_Diamonds.3	Contraste renovado
+S	.misc.collab_palettes.default_Hearts.3	Contraste renovado
+S	.misc.collab_palettes.default_Spades.3	Contraste renovado
+S	.misc.collabs.bunc_Fleurons.1	Por defecto
+S	.misc.collabs.bunc_Halberds.1	Por defecto
+S	.misc.dictionary.bunc_a_side	Cara A
+S	.misc.dictionary.bunc_b_side	Cara B
+S	.misc.dictionary.bunc_final_blind	Ciega final
+S	.misc.dictionary.bunc_inactive	inactivo
+S	.misc.dictionary.bunc_min_ante	Apuesta inicial mínima:
+S	.misc.dictionary.bunc_pew	¡Piu!
+S	.misc.dictionary.bunc_robbed	¡Robado!
+S	.misc.dictionary.bunc_thoth_tarots	Tarots de Thoth

@@ -1,0 +1,25 @@
+S	.misc.dictionary.b_mods	Mods
+S	.misc.dictionary.b_mods_cap	MODS
+S	.misc.dictionary.b_run_select_reduce	Modo rendimiento al elegir partida
+A	.misc.dictionary.b_run_select_reduce_info	Reduce el número de cartas mostradas / y elimina las animaciones
+S	.misc.dictionary.b_stickers	Pegatinas
+S	.misc.dictionary.b_vanilla_run_select	Usar selector de partida original
+A	.misc.dictionary.b_vanilla_run_select_info	Esta opción se ignora si los mods / añaden páginas adicionales
+S	.misc.dictionary.b_vanilla_stake	Usar vista de pozos original
+A	.misc.dictionary.b_vanilla_stake_info	Activa o desactiva la vista personalizada / de pozos en la información de la partida
+S	.misc.dictionary.k_enhanced	Mejora
+S	.misc.dictionary.run_select_deck_choice	Elegir baraja
+S	.misc.dictionary.run_select_deck_choice_random	Baraja aleatoria
+S	.misc.dictionary.run_select_locked_stake	Bloqueado
+S	.misc.dictionary.run_select_locked_stake_and	\032y\032
+S	.misc.dictionary.run_select_locked_stake_message	Gana con esta baraja en\032
+S	.misc.dictionary.run_select_nothing	Nada
+S	.misc.dictionary.run_select_play	Jugar
+S	.misc.dictionary.run_select_quick_start	Inicio rápido
+S	.misc.dictionary.run_select_selected	SELECCIONADO
+S	.misc.dictionary.run_select_stake_choice	Elegir pozo
+S	.misc.dictionary.run_select_stake_choice_random	Pozo aleatorio
+S	.misc.dictionary.run_setup_enable_seed	Activar código
+S	.misc.v_dictionary.a_blind_size	#1# tamaño de ciega
+S	.misc.v_dictionary.a_xblind_size	X#1# tamaño de ciega
+S	.misc.v_dictionary.a_xblind_size_minus	-X#1# tamaño de ciega

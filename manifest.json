@@ -1,0 +1,14 @@
+{
+    "id": "GuiaTraduccionES",
+    "name": "Guía y Traducción ES",
+    "display_name": "Guía ES",
+    "author": ["David"],
+    "description": "Explica en español para qué sirve cada mod instalado y traduce al español los textos que los mods dejaron en inglés, sin modificar sus archivos.",
+    "prefix": "guiaes",
+    "main_file": "main.lua",
+    "priority": 999999999,
+    "version": "0.2",
+    "badge_colour": "8867A5",
+    "badge_text_colour": "FFFFFF",
+    "dependencies": ["Steamodded (>=1.0.0~BETA)"]
+}

@@ -1,0 +1,43 @@
+S	.descriptions.alt_texture.alt_tex_darktextures_dark_jokers.name	Comodines oscuros
+S	.descriptions.alt_texture.alt_tex_darktextures_dark_tags.name	Etiquetas oscuras
+S	.descriptions.alt_texture.alt_tex_darktextures_dark_decks.name	Barajas oscuras
+S	.descriptions.alt_texture.alt_tex_darktextures_dark_seals.name	Sellos oscuros
+S	.descriptions.alt_texture.alt_tex_darktextures_dark_vouchers.name	Vales oscuros
+S	.descriptions.alt_texture.alt_tex_darktextures_dark_boosters.name	Paquetes oscuros
+S	.descriptions.alt_texture.alt_tex_darktextures_dark_enhance.name	Mejoras oscuras
+S	.descriptions.alt_texture.alt_tex_darktextures_dark_tarot.name	Tarots oscuros
+S	.descriptions.alt_texture.alt_tex_darktextures_dark_planet.name	Planetas oscuros
+S	.descriptions.alt_texture.alt_tex_darktextures_dark_spectral.name	Espectrales oscuras
+S	.descriptions.alt_texture.alt_tex_darktextures_base_card.name	Cartas base oscuras
+S	.descriptions.alt_texture.Joker.name	Comodines por defecto
+A	.descriptions.alt_texture.Joker.text	Textura original del juego
+S	.descriptions.alt_texture.Tarot.name	Tarots por defecto
+A	.descriptions.alt_texture.Tarot.text	Textura original del juego
+S	.descriptions.alt_texture.Planet.name	Planetas por defecto
+A	.descriptions.alt_texture.Planet.text	Textura original del juego
+S	.descriptions.alt_texture.Spectral.name	Espectrales por defecto
+A	.descriptions.alt_texture.Spectral.text	Textura original del juego
+S	.descriptions.alt_texture.Enhanced.name	Mejoras por defecto
+A	.descriptions.alt_texture.Enhanced.text	Textura original del juego
+S	.descriptions.alt_texture.Seal.name	Sellos por defecto
+A	.descriptions.alt_texture.Seal.text	Textura original del juego
+S	.descriptions.alt_texture.Blind.name	Ciegas por defecto
+A	.descriptions.alt_texture.Blind.text	Textura original del juego
+S	.descriptions.alt_texture.Tag.name	Etiquetas por defecto
+A	.descriptions.alt_texture.Tag.text	Textura original del juego
+S	.descriptions.alt_texture.Back.name	Barajas por defecto
+A	.descriptions.alt_texture.Back.text	Textura original del juego
+S	.descriptions.alt_texture.Voucher.name	Vales por defecto
+A	.descriptions.alt_texture.Voucher.text	Textura original del juego
+S	.descriptions.alt_texture.Booster.name	Paquetes por defecto
+A	.descriptions.alt_texture.Booster.text	Textura original del juego
+S	.descriptions.alt_texture.Stake.name	Pozos por defecto
+A	.descriptions.alt_texture.Stake.text	Textura original del juego
+S	.descriptions.alt_texture.Sticker.name	Pegatinas por defecto
+A	.descriptions.alt_texture.Sticker.text	Textura original del juego
+S	.descriptions.texture_packs.default.name	Juego original
+A	.descriptions.texture_packs.default.text	Texturas originales del juego
+S	.descriptions.texture_packs.texpack_darktextures_dark.name	Pack modo oscuro
+A	.descriptions.texture_packs.texpack_darktextures_dark.text	Reemplaza las texturas con / elegantes variantes oscuras
+S	.descriptions.alt_texture.default.name	Por defecto
+A	.descriptions.alt_texture.default.text	Descripción de ejemplo

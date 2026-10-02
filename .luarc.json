@@ -1,0 +1,3 @@
+{
+  "diagnostics.globals": ["SMODS", "G", "UIElement", "DynaText", "Handy", "sendWarnMessage", "init_localization", "UIBox_button", "love"]
+}

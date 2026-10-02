@@ -1,0 +1,224 @@
+A	.descriptions.Back.b_cry_CCD.unlock	Usa {C:spectral}Hammerspace
+A	.descriptions.Back.b_cry_antimatter.unlock	Gana una partida / con la {C:attention}baraja en blanco / en el {C:attention}pozo de oro
+A	.descriptions.Back.b_cry_antimatter_balanced.unlock	Gana una partida / con la {C:attention}baraja en blanco / en el {C:attention}pozo de oro
+S	.descriptions.Back.b_cry_antimatter_custom.name	Baraja de antimateria
+A	.descriptions.Back.b_cry_antimatter_custom.text	Aplica las {C:legendary,E:1}ventajas{} / de {C:attention}algunas{} barajas ganadas / en el {C:gold}pozo de oro{}
+A	.descriptions.Back.b_cry_antimatter_custom.unlock	Gana una partida / con la {C:attention}baraja en blanco / en el {C:attention}pozo de oro
+A	.descriptions.Back.b_cry_beige.unlock	Descubre al menos / {C:attention}200{} objetos de / tu colección
+A	.descriptions.Back.b_cry_beta.unlock	Gana una partida / en el {C:attention}pozo rosa
+A	.descriptions.Back.b_cry_bountiful.unlock	Vence a {C:attention}La serpiente / sin {C:red}descartar
+A	.descriptions.Back.b_cry_conveyor.unlock	Usa {C:spectral}Analógico
+A	.descriptions.Back.b_cry_critical.unlock	Consigue un {C:attention}comodín amañado
+A	.descriptions.Back.b_cry_e_deck.unlock	Descubre todas / las {C:dark_edition}ediciones
+A	.descriptions.Back.b_cry_encoded.unlock	Usa {C:spectral}POINTER://
+A	.descriptions.Back.b_cry_equilibrium.unlock	Ten {C:attention}100 comodines / a la vez
+A	.descriptions.Back.b_cry_et_deck.unlock	Usa {C:spectral}Vacío
+A	.descriptions.Back.b_cry_glowing.unlock	Gana una partida / con la {C:attention}baraja beis
+A	.descriptions.Back.b_cry_infinite.unlock	Juega una mano que contenga / {C:attention}6{} cartas o más
+A	.descriptions.Back.b_cry_legendary.unlock	Ten {C:attention}2 comodines legendarios / a la vez
+A	.descriptions.Back.b_cry_misprint.unlock	Consigue un {C:attention}comodín {C:dark_edition}glitcheado
+A	.descriptions.Back.b_cry_redeemed.unlock	Descubre todos / los {C:attention}vales
+A	.descriptions.Back.b_cry_sk_deck.unlock	Usa {C:spectral}Cerrojo
+A	.descriptions.Back.b_cry_sl_deck.unlock	Usa {C:spectral}Tifón
+A	.descriptions.Back.b_cry_spooky.unlock	Consigue un {C:attention}comodín {C:cry_candy}caramelo
+A	.descriptions.Back.b_cry_st_deck.unlock	Usa {C:spectral}Réplica
+A	.descriptions.Back.b_cry_very_fair.unlock	Gana una partida / con la {C:attention}baraja en blanco
+A	.descriptions.Back.b_cry_wormhole.unlock	Consigue un {C:attention}comodín {C:cry_exotic}exótico
+S	.descriptions.Blind.bl_cry_chromatic.name	El cromático
+A	.descriptions.Blind.bl_cry_chromatic.text	La puntuación de la mano / se resta en las / manos impares
+S	.descriptions.Blind.bl_cry_decision.name	La decisión
+A	.descriptions.Blind.bl_cry_decision.text	Fija comodines al jugar o descartar / Abre un paquete de bufón funesto / tras la ronda
+S	.descriptions.Blind.bl_cry_greed.name	La codicia
+A	.descriptions.Blind.bl_cry_greed.text	+#2# al requisito de la ciega / por cada $#1# al seleccionarla
+S	.descriptions.Blind.bl_cry_landlord.name	El casero
+A	.descriptions.Blind.bl_cry_landlord.text	Aplica alquiler a / un comodín aleatorio / al jugar una mano
+S	.descriptions.Blind.bl_cry_repulsor.name	El repulsor
+A	.descriptions.Blind.bl_cry_repulsor.text	Reactiva el comodín de más a la derecha / y el de más a la izquierda; el resto / de comodines no se activan
+S	.descriptions.Blind.bl_cry_scorch.name	La quemadura
+A	.descriptions.Blind.bl_cry_scorch.text	Debes jugar 5 cartas; / se destruyen las cartas / jugadas y descartadas
+A	.descriptions.Code.c_cry_assemble.text	Añade {C:cry_code}multi{} a la / {C:cry_code}mano seleccionada{} igual al / número de comodines que tengas
+A	.descriptions.Code.c_cry_cryfunction.text	Guarda los {C:cry_code}tres últimos{} consumibles usados; / al volver a usar esta carta crea una copia / del primero con la pegatina {C:cry_code}Function://{}
+A	.descriptions.Code.c_cry_cryupdate.text	Por {C:cry_code}determinar{} / en una futura {C:cry_code}actualización{}
+A	.descriptions.Code.c_cry_declare.text	Las cartas que tienes seleccionadas {C:attention}ahora{} / se convierten en una {C:cry_code}nueva{} mano de póker / que se considera que contiene un {C:attention}#1#{} / Puedes crear hasta {C:attention}3{} manos {C:inactive}[#2#]{}
+A	.descriptions.Code.c_cry_global.text	Selecciona una carta de juego / para que pase a ser {C:cry_code}global{}
+A	.descriptions.Code.c_cry_keygen.text	Crea un vale {C:cry_code}plátano perecedero{} / aleatorio y {C:cry_code}destruye{} el vale / creado antes de esta forma.
+A	.descriptions.Code.c_cry_log.text	Muestra un {C:cry_code}informe{} de una de estas cosas: / la {C:attention}ciega jefe{} y el {C:attention}vale{} de la {C:attention}siguiente{} apuesta inicial, / los próximos {C:attention}5{} {C:attention}comodines{} de la tienda, o / las próximas {C:attention}10{} cartas de juego que se {C:attention}roben{} / {C:inactive}(Si estás en una ciega){}
+A	.descriptions.Code.c_cry_nperror.text	Devuelve la {C:cry_code}última mano jugada{} / a tu mano
+A	.descriptions.Code.c_cry_quantify.text	Transfiere {C:attention}#1#{} / {C:attention}carta(s){} o {C:attention}paquete(s){} seleccionados / a la fila de {C:attention}comodines{}
+S	.descriptions.Content Set.set_cry_meme.name	Meme
+A	.descriptions.Content Set.set_cry_meme.text	Cosas relacionadas / con varias referencias
+S	.descriptions.Edition.e_cry_astral.name	Astral
+S	.descriptions.Joker.j_cry_CodeJoker_modest.name	Comodín de código
+S	.descriptions.Joker.j_cry_annihalation.name	La aniquilación total y absoluta de todo lo que hace sagrado a Balatro
+A	.descriptions.Joker.j_cry_annihalation.text	Multi {X:dark_edition,C:white}^#1#{} si la mano / jugada contiene / un {C:attention}#2#
+A	.descriptions.Joker.j_cry_annihalation.unlock	Gana una partida con / un {E:1,C:attention}#1#{} como / última mano
+S	.descriptions.Joker.j_cry_blender.name	Batidora
+S	.descriptions.Joker.j_cry_bonk.name	Bonk
+S	.descriptions.Joker.j_cry_broken_sync_catalyst.name	Catalizador de sincronía roto
+A	.descriptions.Joker.j_cry_broken_sync_catalyst.text	Intercambia el {C:attention}#1#%{} de las {C:chips}fichas{} con el {C:attention}#1#%{} del {C:mult}multi{} / {C:inactive,s:0.8}Este ya lo he visto antes... / {C:inactive,s:0.8}...ha conocido días mejores.
+S	.descriptions.Joker.j_cry_buttercup.name	Buttercup
+A	.descriptions.Joker.j_cry_buttercup.text	Puede guardar {C:attention}#1#{} artículo(s) seleccionado(s) de la tienda / Al venderlo: añade lo guardado / a la próxima tienda
+A	.descriptions.Joker.j_cry_caeruleum.text	Los comodines adyacentes que modifican {C:chips}fichas{} / usan el siguiente {C:attention}operador{} superior al puntuar / {C:inactive}(Máximo: exponenciación)
+S	.descriptions.Joker.j_cry_canvas_balanced.name	Lienzo
+S	.descriptions.Joker.j_cry_cat_owl.name	Gato búho
+A	.descriptions.Joker.j_cry_cat_owl.text	Las {C:attention}cartas de la suerte{} también / cuentan como {C:attention}cartas eco / Las {C:attention}cartas eco{} también / cuentan como {C:attention}cartas de la suerte
+S	.descriptions.Joker.j_cry_chad.name	Chad
+S	.descriptions.Joker.j_cry_clockwork.name	Comodín mecánico
+A	.descriptions.Joker.j_cry_clockwork.text	Reactiva las cartas de acero en la mano cada {C:attention}#9#{} {C:inactive}(#1#){} manos / Este comodín gana multi {X:mult,C:white}X#6#{} {C:inactive}(X#5#){} cada {C:attention}#10#{} {C:inactive}(#2#){} manos / Convierte en acero la primera carta jugada cada {C:attention}#11#{} {C:inactive}(#3#){} manos / Las cartas de acero en la mano dan multi +{X:mult,C:white}X#8#{} {C:inactive}(X#7#){} cada {C:attention}#12#{} {C:inactive}(#4#){} manos
+S	.descriptions.Joker.j_cry_cursor.name	Cursor
+S	.descriptions.Joker.j_cry_demicolon.name	Semipunto y coma
+S	.descriptions.Joker.j_cry_emergencychips.name	Fichas de emergencia
+A	.descriptions.Joker.j_cry_emergencychips.text	Al venderlo, gana al instante / el {C:chips}#1#%{} del requisito de la ciega / como puntuación / {C:inactive}(Actual: {}{C:chips}#2#{}{C:inactive}){}
+S	.descriptions.Joker.j_cry_equilib.name	As Aequilibrium
+S	.descriptions.Joker.j_cry_eyeofhagane.name	Ojo de Hagane
+A	.descriptions.Joker.j_cry_eyeofhagane.text	Todas las cartas de {C:attention}figura{} jugadas / se convierten en cartas de {C:attention}acero / cuando anotan
+S	.descriptions.Joker.j_cry_fading_joker.name	Comodín desvanecido
+A	.descriptions.Joker.j_cry_fading_joker.text	Este comodín gana / multi {X:mult,C:white}X#1#{} cada vez que / se debilita una carta {C:attention}perecedera / {C:inactive}(Actual: multi{} {X:mult,C:white}X#2#{}{C:inactive}){}
+S	.descriptions.Joker.j_cry_fspinner.name	Fidget spinner
+S	.descriptions.Joker.j_cry_gemino.name	Géminis
+S	.descriptions.Joker.j_cry_jtron.name	Jimbo-trón 9000
+S	.descriptions.Joker.j_cry_keychange.name	Cambio de tonalidad
+A	.descriptions.Joker.j_cry_keychange.text	Gana {C:white,X:mult}X#1#{} si la {C:attention}mano de póker{} no / se ha jugado esta ronda / Se reinicia al {C:attention}final de la ronda{} / {C:inactive}(Actual: {C:white,X:mult}X#2#{C:inactive}){}
+S	.descriptions.Joker.j_cry_loopy.name	Loopy
+S	.descriptions.Joker.j_cry_many_lost_minds.name	Muchos han perdido la cabeza intentando entender este comodín
+A	.descriptions.Joker.j_cry_many_lost_minds.text	{C:chips}+#1#{} fichas si la mano / jugada contiene / {C:attention}#2#
+S	.descriptions.Joker.j_cry_nice.name	Nice
+S	.descriptions.Joker.j_cry_paved_joker.name	Comodín pavimentado
+A	.descriptions.Joker.j_cry_paved_joker.text	Las cartas de piedra pueden llenar / huecos de {C:attention}#1#{} en / {C:attention}escaleras{} y {C:attention}colores{}
+S	.descriptions.Joker.j_cry_pity_prize_modest.name	Premio de consolación
+A	.descriptions.Joker.j_cry_pity_prize_modest.text	Al omitir un {C:attention}paquete potenciador{}, / obtienes una {C:attention}etiqueta{} aleatoria / Se {C:red,E:2}autodestruye{}
+S	.descriptions.Joker.j_cry_pizza.name	Pizza
+A	.descriptions.Joker.j_cry_pizza.text	Tras {C:attention}#1#{} {C:inactive}[#2#]{} ronda(s), / vende este comodín para crear / {C:attention}#3#{} porciones de pizza
+S	.descriptions.Joker.j_cry_pizza_slice.name	Porción de pizza
+A	.descriptions.Joker.j_cry_pizza_slice.text	Este comodín gana multi {X:mult,C:white}X#1#{} / cuando se vende una {C:attention}porción de pizza{} / {C:inactive}(Actual: multi{} {X:mult,C:white}X#2#{}{C:inactive}){}
+S	.descriptions.Joker.j_cry_poor_joker.name	Comodín pobre
+A	.descriptions.Joker.j_cry_poor_joker.text	Este comodín gana / {C:mult}+#1#{} multi cada vez que / una carta {C:attention}de alquiler{} cobra dinero / {C:inactive}(Actual: {C:mult}+#2#{} {C:inactive}multi){}
+S	.descriptions.Joker.j_cry_python.name	Python
+S	.descriptions.Joker.j_cry_rnjoker.name	RNComodín
+S	.descriptions.Joker.j_cry_rotten_egg.name	Huevo podrido
+A	.descriptions.Joker.j_cry_rotten_egg.text	Al obtenerlo, fija el valor de venta de / todos los comodines actuales y futuros en {C:attention}$#1#{} / Reduce el valor de venta de todos los {C:attention}comodines{} en {C:attention}$#2#{} / Al final de la ronda, tras ganar {C:attention}$#3#{} {C:inactive}[#4#]{} / vendiendo {C:attention}comodines{}, se {C:red}autodestruye{}
+S	.descriptions.Joker.j_cry_sundial.name	Proyecto Reloj de sol
+A	.descriptions.Joker.j_cry_sundial.text	Tras jugar #1# manos, {C:attention}vende este comodín / para reducir el tamaño de la ciega un #2# % / {C:red,E:1}#3#
+S	.descriptions.Joker.j_cry_supercell.name	Supercélula
+S	.descriptions.Joker.j_cry_supercell_balanced.name	Supercélula
+S	.descriptions.Joker.j_cry_sus.name	SUS
+S	.descriptions.Joker.j_cry_test_cryptid_in_2025.name	Comodín de prueba
+S	.descriptions.Joker.j_cry_test_madness.name	Comodín de prueba
+S	.descriptions.Joker.j_cry_test_mainline.name	Comodín de prueba
+S	.descriptions.Joker.j_cry_test_modest.name	Comodín de prueba
+S	.descriptions.Joker.j_cry_thalia.name	Talía y Melpómene
+A	.descriptions.Joker.j_cry_thalia.text	Multi {C:white,X:mult}X#1#{} por cada / pareja de rarezas distintas / {C:inactive}(Actual: {C:white,X:mult}X#2#{C:inactive}){}
+S	.descriptions.Joker.j_cry_verisimile.name	Non Verisimile
+S	.descriptions.Joker.j_cry_virgo.name	Virgo
+S	.descriptions.Joker.j_cry_wee_fib.name	Weebonacci
+S	.descriptions.Joker.j_cry_wonka_bar.name	Chocolatina Wonka
+A	.descriptions.Joker.j_cry_wonka_bar.text	Vende esta carta para / ganar permanentemente {C:attention}+#1#{} / al límite de selección de cartas
+S	.descriptions.Joker.j_cry_words_cant_even.name	No hay palabras para describir este comodín
+A	.descriptions.Joker.j_cry_words_cant_even.text	Multi {X:mult,C:white}X#1#{} si la mano / jugada contiene / un {C:attention}#2#
+S	.descriptions.Joker.j_cry_yarnball.name	Ovillo de lana
+A	.descriptions.Joker.j_cry_yarnball.text	Suma el nivel de la {C:attention}etiqueta gato{} de mayor nivel / a todas las {C:green}probabilidades indicadas
+S	.descriptions.Other.asc_misc.name	Información de mano ascendida
+A	.descriptions.Other.asc_misc.text	{C:gold}#1#{} de poder de ascensión / {X:gold,C:white}X#2#{C:chips} fichas{} y {C:mult}multi / {C:inactive}({C:gold}#3#{C:inactive} ^ {C:gold}#1#{C:inactive})
+S	.descriptions.Other.asc_misc2.name	Información de mano ascendida
+A	.descriptions.Other.asc_misc2.text	{C:gold}#1#{} de poder de ascensión / {X:gold,C:white}X#2#{C:chips} fichas{} y {C:mult}multi / {C:inactive}({C:gold}#3#{C:inactive} X {C:gold}#1#{C:inactive})
+S	.descriptions.Other.banana.name	Plátano
+S	.descriptions.Other.cry_banana_booster.name	Plátano
+S	.descriptions.Other.cry_banana_consumeable.name	Plátano
+S	.descriptions.Other.cry_banana_voucher.name	Plátano
+A	.descriptions.Other.cry_function_sticker.text	Crea {C:cry_code}#1#{} / al usarse
+A	.descriptions.Other.cry_function_sticker_desc.text	Crea el siguiente / consumible {C:cry_code}Function://{} / {C:inactive}Actual: #1#, #2# y #3#{}
+S	.descriptions.Other.cry_global_sticker.name	Global
+A	.descriptions.Other.cry_global_sticker.text	Roba esta carta / {C:cry_code}antes que las demás{}, / si es posible
+S	.descriptions.Other.cry_hooked_2.name	Enganchado
+A	.descriptions.Other.cry_hooked_2.text	Cuando este comodín se {C:cry_code}activa{}, / activa {C:cry_code}#1# / {C:inactive}No todas las cartas pueden activarse así{} / {C:inactive}pero todos los comodines pueden activar al otro{}
+A	.descriptions.Other.cry_multiuse.text	{C:inactive}Multiuso: (quedan {C:cry_code}#1#{C:inactive})
+S	.descriptions.Other.o_nstar.name	Efecto del observatorio
+A	.descriptions.Other.o_nstar.text	Multi {X:mult,C:white}X#1#{} por cada / {C:attention}estrella de neutrones{} usada / en esta partida / {C:inactive}(Actual: multi {X:mult,C:white}X#2#{C:inactive})
+S	.descriptions.Other.o_perkele.name	Efecto del observatorio
+A	.descriptions.Other.o_perkele.text	Multi {X:dark_edition,C:white}^#2#{} si la mano jugada es / {C:attention}#4#{} / Multi {X:mult,C:white}X#2#{} si la mano jugada es {C:attention}#3#{} / Las cartas {C:attention}Sol{} y {C:attention}Perkele{} en la mano / aumentan el {C:attention}poder de ascensión / {C:inactive}(Actual: {X:gold,C:white}+#1#{C:inactive})
+S	.descriptions.Other.o_planetlua.name	Efecto del observatorio
+S	.descriptions.Other.o_sunplanet.name	Efecto del observatorio
+A	.descriptions.Other.o_sunplanet.text	Las cartas {C:attention}Sol{} y {C:attention}Perkele{} en la mano / aumentan el {C:attention}poder de ascensión / {C:inactive}(Actual: {X:gold,C:white}+#1#{C:inactive})
+S	.descriptions.Other.p_cry_baneful_1.name	Paquete de bufón funesto
+A	.descriptions.Other.p_cry_baneful_1.text	Elige {C:attention}#1#{} de / hasta {C:attention}#2#{} comodines {X:cry_cursed,C:white}malditos{} / Si lo {C:attention}omites{}, se {C:red}destierra{} / el comodín de {C:attention}más a la derecha
+A	.descriptions.Planet.c_cry_Timantii.text	({V:1}nvl.#4#{})({V:2}nvl.#5#{})({V:3}nvl.#6#{}) / Aumenta el nivel de / {C:attention}#1#{}, / {C:attention}#2#{} / y {C:attention}#3#{}
+A	.descriptions.Planet.c_cry_nibiru.text	{S:0.8}({S:0.8,V:1}nvl.#1#{S:0.8}){} Aumenta el nivel de / {C:attention}#2# / {C:mult}+#3#{} multi y / {C:chips}+#4#{} fichas
+A	.descriptions.Planet.c_cry_perkele.text	({V:1}nvl.#4#{})({V:2}nvl.#5#{})({V:3}nvl.#6#{}) / Aumenta el nivel de / {C:attention}#1#{}, / {C:attention}#2#{} / y {C:attention}#3#{} / {C:inactive}(Actual: multiplicador {X:gold,C:white}X#7#{C:inactive} de {C:chips}F{}+{C:mult}M{C:inactive} / {C:inactive}por cada {C:attention}1{C:inactive} de poder de ascensión)
+A	.descriptions.Planet.c_cry_sunplanet2.text	{S:0.8}({S:0.8,V:1}nvl.#1#{S:0.8}){} / Aumenta el factor de ascensión / de las manos {C:attention}ascendidas{} en {X:gold,C:white}#2#{} / {C:inactive}(Actual: multiplicador {X:gold,C:white}+#3#{C:inactive} de {C:chips}F{}+{C:mult}M{C:inactive} / {C:inactive}por cada {C:attention}1{C:inactive} de poder de ascensión)
+A	.descriptions.Planet.c_cry_voxel.text	({V:1}nvl.#4#{})({V:2}nvl.#5#{})({V:3}nvl.#6#{}) / Aumenta el nivel de / {C:attention}#1#{}, / {C:attention}#2#{} / y {C:attention}#3#{}
+S	.descriptions.Sleeve.sleeve_cry_antimatter_sleeve_balanced.name	Funda de antimateria
+A	.descriptions.Sleeve.sleeve_cry_antimatter_sleeve_balanced.text	Aplica los {C:attention}efectos{} / y {C:attention}efectos especiales{} / de {C:attention}todas{} las fundas ganadas / en el {C:gold}pozo de oro{}
+A	.descriptions.Sleeve.sleeve_cry_very_fair_sleeve.text	{C:blue}-2{} manos, {C:red}-2{} descartes / en cada ronda / Los {C:attention}vales{} ya no / aparecen en la tienda
+S	.descriptions.Spectral.c_cry_ritual.name	Ritual
+S	.descriptions.Tag.tag_cry_clone.name	Etiqueta clon
+A	.descriptions.Tag.tag_cry_clone.text	Los artículos de la tienda cuestan {C:attention}X#1#{}; / obtienes una {C:attention}copia{} / de la próxima carta que compres
+S	.descriptions.Tag.tag_cry_lens.name	Etiqueta lente
+A	.descriptions.Tag.tag_cry_lens.text	Aplica {C:dark_edition}negativo{} / a {C:attention}#1#{} consumible(s) / aleatorio(s)
+S	.descriptions.Tag.tag_cry_loss.name	Pérdida
+S	.descriptions.Tag.tag_cry_palette_cleanser.name	Etiqueta limpiapaladar
+A	.descriptions.Tag.tag_cry_palette_cleanser.text	Quita una pegatina {C:attention}aleatoria{} / de un comodín o carta de juego / {C:attention}aleatorios{}
+S	.descriptions.Tarot.c_cry_instability.name	Inestabilidad
+A	.descriptions.Tarot.c_cry_instability.text	Mejora {C:attention}#1#{} carta(s) seleccionada(s) / a {C:attention}carta abstracta
+S	.misc.achievement_descriptions.ach_cry_technically_positive	Consigue un comodín negativo negativo
+S	.misc.achievement_names.ach_cry_decked	Barajado
+S	.misc.achievement_names.ach_cry_despaired	Desesperado
+S	.misc.achievement_names.ach_cry_exodia	Exodia
+S	.misc.achievement_names.ach_cry_freak_house	Full de bichos raros
+S	.misc.achievement_names.ach_cry_fucked	Amontonado
+S	.misc.achievement_names.ach_cry_pull_request	Pull request
+S	.misc.achievement_names.ach_cry_stoned	Petrificado
+S	.misc.achievement_names.ach_cry_technically_positive	Técnicamente positivo
+S	.misc.achievement_names.ach_cry_ult_full_skip	Omisión total definitiva
+S	.misc.achievement_names.ach_cry_youre_fucking_kidding	No puede ser en serio
+S	.misc.challenge_names.c_cry_ballin	A lo grande
+S	.misc.challenge_names.c_cry_boss_rush	Enter the Gungeon
+S	.misc.challenge_names.c_cry_rng	RNG
+S	.misc.dictionary.b_playing_cards	Cartas de juego
+S	.misc.dictionary.b_store	TIENDA
+S	.misc.dictionary.cry_balanced_q	¿Equilibrado...?
+S	.misc.dictionary.cry_baneful_warning	Si lo omites, se desterrará el comodín de más a la derecha
+S	.misc.dictionary.cry_blind_baneful_pack	Tras la ronda, abre un paquete de bufón funesto
+S	.misc.dictionary.cry_circus_generic	Los comodines {V:#1#}#2#{} dan cada uno multi {X:mult,C:white} X#3# {}
+S	.misc.dictionary.cry_code_antevoucher	Próxima ciega jefe y vale
+S	.misc.dictionary.cry_code_empty	[Declarar mano]
+S	.misc.dictionary.cry_code_enter_hand	ESCRIBE EL NOMBRE DE LA MANO DE PÓKER
+S	.misc.dictionary.cry_code_exit	SALIR
+S	.misc.dictionary.cry_code_nextcards	Próximas cartas robadas
+S	.misc.dictionary.cry_code_nextjokers	Próximos comodines de la tienda
+S	.misc.dictionary.cry_code_suitless	La mano no requiere palos concretos
+S	.misc.dictionary.cry_code_with_suits	INCLUIR PALOS
+S	.misc.dictionary.cry_code_without_suits	IGNORAR PALOS
+S	.misc.dictionary.cry_demicolon	¡Semiactivación!
+S	.misc.dictionary.cry_destroyed_ex	¡Destruida!
+S	.misc.dictionary.cry_divorced	¡Divorciado!
+S	.misc.dictionary.cry_force_tooltips	Forzar descripciones emergentes
+S	.misc.dictionary.cry_gameset_Custom	Personalizado
+S	.misc.dictionary.cry_gameset_exp	Experimental
+S	.misc.dictionary.cry_gameset_exp_mainline	Experimental (principal)
+S	.misc.dictionary.cry_gameset_mainline	Principal
+S	.misc.dictionary.cry_gaming	Gaming
+S	.misc.dictionary.cry_hand_bulwark	Baluarte
+S	.misc.dictionary.cry_hand_clusterfuck	Caos total
+S	.misc.dictionary.cry_hand_ultpair	Pareja definitiva
+S	.misc.dictionary.cry_highfive_ex	¡Choca esos cinco!
+S	.misc.dictionary.k_cry_baneful_pack	Paquete de bufón funesto
+S	.misc.dictionary.k_cry_shiny	Brillante
+S	.misc.dictionary.k_downgraded_ex	¡Degradado!
+S	.misc.dictionary.k_planet_nibiru	Nada
+S	.misc.dictionary.rush_hour_reminder	Activa el bucle de Reloj y Lavanda para jugar Hora punta
+S	.misc.labels.banana	Plátano
+S	.misc.labels.cry_astral	Astral
+S	.misc.labels.cry_global_sticker	Global
+A	.misc.poker_hand_descriptions.cry_Declare0	Siempre cuenta como escalera
+A	.misc.poker_hand_descriptions.cry_Declare0_suitless	Siempre cuenta como escalera / La mano no necesita palos concretos
+A	.misc.poker_hand_descriptions.cry_Declare1	Siempre cuenta como color
+A	.misc.poker_hand_descriptions.cry_Declare1_suitless	Siempre cuenta como color / La mano no necesita palos concretos
+A	.misc.poker_hand_descriptions.cry_Declare2	Siempre cuenta como full
+A	.misc.poker_hand_descriptions.cry_Declare2_suitless	Siempre cuenta como full / La mano no necesita palos concretos
+A	.misc.poker_hand_descriptions.cry_None	Una mano con 0 cartas
+S	.misc.poker_hands.cry-Cluster Bulwark	Baluarte caótico
+S	.misc.poker_hands.cry_None	Ninguna
+S	.misc.v_dictionary.cry_idea	Idea: #1#
+S	.misc.v_dictionary.cry_trade_add	#1# se canjeó por intercambio
+S	.misc.v_dictionary.cry_trade_remove	#1# se descanjeó por intercambio
+S	.misc.v_dictionary.tax_hand	Máx. #1# % de las fichas requeridas

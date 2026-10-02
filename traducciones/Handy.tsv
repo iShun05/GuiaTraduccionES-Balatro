@@ -1,0 +1,358 @@
+S	.descriptions.Handy_ConfigDictionary.animation_skip.handy_override_align.unlock.[5]	cl
+S	.descriptions.Handy_ConfigDictionary.animation_skip.handy_override_align.unlock.[6]	cl
+S	.descriptions.Handy_ConfigDictionary.animation_skip.handy_override_align.unlock.[7]	cl
+S	.descriptions.Handy_ConfigDictionary.animation_skip.handy_override_align.unlock.[8]	cl
+S	.descriptions.Handy_ConfigDictionary.animation_skip.name	Saltar animaciones
+A	.descriptions.Handy_ConfigDictionary.animation_skip.text	Elimina las animaciones de puntuación y otras del juego
+A	.descriptions.Handy_ConfigDictionary.animation_skip.unlock	Sustituye directamente la misma función / de mods como {C:attention}Talisman{}, {C:attention}Saturn{} o {C:attention}Nopeus{} /   / Tiene 4 niveles: / {C:chips}#1#{} - sin cambios / {C:chips}#2#{} - sin mensajes de {C:mult}multi X{}, {C:attention}¡Otra vez!{} ni otras activaciones / {C:attention}#3#{} - puntuación instantánea / {C:attention}#4#{} - casi sin animaciones; robo de cartas instantáneo
+S	.descriptions.Handy_ConfigDictionary.animation_skip_current_value.name	Saltar animaciones: valor actual
+A	.descriptions.Handy_ConfigDictionary.animation_skip_decrease.name	Saltar animaciones: reducir
+S	.descriptions.Handy_ConfigDictionary.animation_skip_default_value.name	Saltar animaciones: valor al iniciar el juego
+A	.descriptions.Handy_ConfigDictionary.animation_skip_increase.name	Saltar animaciones: aumentar
+S	.descriptions.Handy_ConfigDictionary.animation_skip_load_value.name	Saltar animaciones: conservar entre recargas
+A	.descriptions.Handy_ConfigDictionary.animation_skip_load_value.unlock	Sustituye el valor al iniciar el juego
+S	.descriptions.Handy_ConfigDictionary.animation_skip_settings_toggle.name	Saltar animaciones: opción en ajustes
+A	.descriptions.Handy_ConfigDictionary.animation_skip_settings_toggle.unlock	Se coloca junto al ajuste original de {C:attention}velocidad del juego{}
+A	.descriptions.Handy_ConfigDictionary.animation_skip_toggle_temp_disabled.name	Saltar animaciones: activar/desactivar
+S	.descriptions.Handy_ConfigDictionary.appearance.name	Apariencia
+S	.descriptions.Handy_ConfigDictionary.controller_sensitivity.name	Mando: sensibilidad del cursor
+S	.descriptions.Handy_ConfigDictionary.current_device.name	Dispositivo de entrada
+A	.descriptions.Handy_ConfigDictionary.current_device.text	Ratón + teclado, o mando
+A	.descriptions.Handy_ConfigDictionary.current_device.unlock	El mod usa distribuciones de teclas distintas / para {C:attention}ratón + teclado{} y {C:attention}mando{} / y cambia entre ellas según / el dispositivo que estés usando / {C:inactive}(si está seleccionado el modo «#1#»){}
+S	.descriptions.Handy_ConfigDictionary.dangerous_actions.name	Acciones peligrosas
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions.text	Para cuando hay demasiadas cosas que gestionar
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_animation_skip_unsafe.name	Saltar animaciones: inseguro
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_animation_skip_unsafe.unlock	Permite subir al nivel {C:mult}#1#{} /   / {C:mult}Límite absoluto del juego: todo es instantáneo{}
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_crash.name	Cerrar el juego de golpe
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_crash.unlock	{C:mult}Literalmente{}
+S	.descriptions.Handy_ConfigDictionary.dangerous_actions_mass_sell_remove_mode.name	Modo de venta/eliminación masiva
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_mass_sell_remove_mode.unlock	Se aplica a los controles: / {C:mult}#1#{} / {C:mult}#2#{} / {C:mult}#3#{} / {C:mult}#4#{}
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_remove_all.name	Eliminar TODO al instante
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_remove_all.text	También funciona con etiquetas de omisión
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_remove_all.unlock	{C:attention}Mantén{} la tecla y {C:attention}haz clic{} en la carta/etiqueta / que quieras {C:mult}eliminar{} / {C:inactive}(se salta todas las comprobaciones, sin reembolso){}
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_remove_all_same.name	Eliminar al instante todas las iguales
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_remove_all_same.text	También funciona con etiquetas de omisión
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_remove_all_same.unlock	{C:attention}Mantén{} la tecla y {C:attention}haz clic{} en la carta/etiqueta / que quieras {C:mult}eliminar{} / {C:inactive}(se salta todas las comprobaciones, sin reembolso){}
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_remove_one.name	Eliminar al instante
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_remove_one.text	También funciona con etiquetas de omisión
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_remove_one.unlock	{C:attention}Mantén{} la tecla y empieza a {C:attention}pasar el ratón{} por / las cartas/etiquetas que quieras {C:mult}eliminar{} /   / Mientras {C:attention}la mantengas{}, se añaden a una lista / Al {C:attention}soltarla{}, se {C:mult}eliminan{} todas / {C:inactive}(se salta todas las comprobaciones, sin reembolso){}
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_sell_all.name	Vender TODO al instante
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_sell_all.unlock	{C:attention}Mantén{} la tecla y {C:attention}haz clic{} en la carta / que quieras vender
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_sell_all_same.name	Vender al instante todas las iguales
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_sell_all_same.unlock	{C:attention}Mantén{} la tecla y {C:attention}haz clic{} en la carta / que quieras vender
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_sell_one.name	Vender al instante
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_sell_one.unlock	{C:attention}Mantén{} la tecla y empieza a {C:attention}pasar el ratón{} por / las cartas que quieras vender /   / Mientras {C:attention}la mantengas{}, se añaden a una lista / Al {C:attention}soltarla{}, se venden todas
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_speed_multiplier_uncap.name	Multiplicador de velocidad: sin límite
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_speed_multiplier_uncap.unlock	Sube el límite de velocidad hasta {C:mult}#1#{} /   / {C:mult}Hunde el rendimiento con valores muy altos{}
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_stack_overflow.name	Cerrar el juego: desbordamiento de pila
+A	.descriptions.Handy_ConfigDictionary.dangerous_actions_stack_overflow.unlock	{C:mult}Literalmente{} / {C:mult}El juego se congelará y/o se cerrará solo{}
+S	.descriptions.Handy_ConfigDictionary.debug_things.name	Desarrollo y depuración
+S	.descriptions.Handy_ConfigDictionary.debug_things_reload_localization.name	Dev: recargar idioma
+A	.descriptions.Handy_ConfigDictionary.debug_things_reload_localization.unlock	G:set_language(); / init_localization();
+S	.descriptions.Handy_ConfigDictionary.debug_things_reload_prototypes.name	Dev: recargar prototipos de objetos
+A	.descriptions.Handy_ConfigDictionary.debug_things_reload_prototypes.unlock	G:set_language(); / G:init_item_prototypes();
+S	.descriptions.Handy_ConfigDictionary.gamepad.name	Ajustes del mando
+S	.descriptions.Handy_ConfigDictionary.general.name	Handy v#1# de #2#
+S	.descriptions.Handy_ConfigDictionary.hand_selection.name	Selección y deselección de mano
+A	.descriptions.Handy_ConfigDictionary.hand_selection.text	Desliza para seleccionar, y más
+A	.descriptions.Handy_ConfigDictionary.hand_selection_combine_select_deselect.name	Seleccionar y deseleccionar combinados
+A	.descriptions.Handy_ConfigDictionary.hand_selection_combine_select_deselect.unlock	{C:inactive}Al pasar el ratón por las cartas:{} / si la carta {C:mult}no{} está seleccionada, se {C:chips}selecciona{} / si la carta {C:chips}está{} seleccionada, se {C:mult}deselecciona{}
+A	.descriptions.Handy_ConfigDictionary.hand_selection_deselect_hand.name	Deseleccionar mano
+A	.descriptions.Handy_ConfigDictionary.hand_selection_deselect_hand.text	#1# del juego original
+A	.descriptions.Handy_ConfigDictionary.hand_selection_entire_f_hand.name	Seleccionar toda la mano
+A	.descriptions.Handy_ConfigDictionary.hand_selection_entire_f_hand.unlock	Selecciona el {C:attention}máximo posible{} / de cartas, de izquierda a derecha
+A	.descriptions.Handy_ConfigDictionary.hand_selection_insta_highlight.name	Selección rápida de mano
+A	.descriptions.Handy_ConfigDictionary.hand_selection_insta_highlight.text	Arrastra, pasa el ratón o desliza para seleccionar
+A	.descriptions.Handy_ConfigDictionary.hand_selection_insta_highlight.unlock	Si está asignado a {C:chips}#1#{}, / empieza a mantener {C:attention}FUERA{} de las cartas / y luego pasa por encima para seleccionarlas / {C:inactive}(si no, agarrarías una carta){}
+A	.descriptions.Handy_ConfigDictionary.hand_selection_insta_highlight_allow_deselect.name	Deselección rápida de mano
+A	.descriptions.Handy_ConfigDictionary.hand_selection_insta_highlight_allow_deselect.unlock	{C:inactive}Al pasar el ratón por las cartas:{} / si la {C:attention}primera{} carta {C:mult}no{} estaba seleccionada, se {C:chips}seleccionan{} / si la {C:attention}primera{} carta {C:chips}sí{} lo estaba, se {C:mult}deseleccionan{}
+S	.descriptions.Handy_ConfigDictionary.hand_selection_mode.name	Forma de seleccionar la mano
+A	.descriptions.Handy_ConfigDictionary.hand_selection_mode.text	Elige el mod que usabas antes
+A	.descriptions.Handy_ConfigDictionary.hand_selection_mode.unlock	Afecta a algunos matices de cómo funcionan / la {C:attention}selección{} y la {C:attention}deselección{} de la mano / al usar una tecla distinta de {C:chips}#1#{} / y/o si {C:chips}#2#{} tienen la misma tecla: /   / {C:attention}Handy{} - selecciona al momento, no deselecciona / {C:attention}BMaG{} - selecciona solo al moverte, deselecciona al soltar
+S	.descriptions.Handy_ConfigDictionary.handy.name	Activar/desactivar el mod entero
+A	.descriptions.Handy_ConfigDictionary.handy.text	Desmárcalo para desactivar TODAS las funciones del mod
+A	.descriptions.Handy_ConfigDictionary.handy.unlock	Cualquier control se puede activar/desactivar / en {C:attention}cualquier momento{} sin / reiniciar el juego ni recargar la partida
+S	.descriptions.Handy_ConfigDictionary.hide_options_button.name	Ocultar el botón del mod en opciones
+S	.descriptions.Handy_ConfigDictionary.insta_actions.name	Comprar/vender/usar rápido
+A	.descriptions.Handy_ConfigDictionary.insta_actions.text	Ahorra clics y usa las cartas más rápido
+A	.descriptions.Handy_ConfigDictionary.insta_actions_buy_n_sell.name	Comprar y vender carta al momento
+A	.descriptions.Handy_ConfigDictionary.insta_actions_buy_n_sell.text	Compra y vende justo después
+A	.descriptions.Handy_ConfigDictionary.insta_actions_buy_n_sell.unlock	El uso depende de {C:attention}#1#{} /   / {C:attention}Mantén{} la tecla y {C:attention}haz clic{} en una carta / para comprarla {C:inactive}(en la tienda){} o elegirla {C:inactive}(en un paquete potenciador){} / y {C:attention}venderla al momento{}
+A	.descriptions.Handy_ConfigDictionary.insta_actions_buy_n_sell_alt.name	Comprar y vender carta al momento
+A	.descriptions.Handy_ConfigDictionary.insta_actions_buy_n_sell_alt.text	Compra y vende justo después
+A	.descriptions.Handy_ConfigDictionary.insta_actions_buy_n_sell_alt.unlock	El uso depende de {C:attention}#1#{} /   / {C:attention}Pasa el ratón/agarra{} la carta y {C:attention}pulsa{} la tecla / para comprarla {C:inactive}(en la tienda){} o elegirla {C:inactive}(en un paquete potenciador){} / y {C:attention}venderla al momento{}
+A	.descriptions.Handy_ConfigDictionary.insta_actions_buy_or_sell.name	Comprar/vender carta rápido
+A	.descriptions.Handy_ConfigDictionary.insta_actions_buy_or_sell.unlock	El uso depende de {C:attention}#1#{} /   / {C:attention}Mantén{} la tecla y {C:attention}haz clic{} en una carta / para comprarla {C:inactive}(en la tienda){}, elegirla {C:inactive}(en un paquete potenciador){} / o venderla {C:inactive}(de los espacios de comodines/consumibles){}
+A	.descriptions.Handy_ConfigDictionary.insta_actions_buy_or_sell_alt.name	Comprar/vender carta rápido
+A	.descriptions.Handy_ConfigDictionary.insta_actions_buy_or_sell_alt.unlock	El uso depende de {C:attention}#1#{} /   / {C:attention}Pasa el ratón/agarra{} la carta y {C:attention}pulsa{} la tecla / para comprarla {C:inactive}(en la tienda){}, elegirla {C:inactive}(en un paquete potenciador){} / o venderla {C:inactive}(de los espacios de comodines/consumibles){}
+S	.descriptions.Handy_ConfigDictionary.insta_actions_trigger_mode.name	Modo de comprar/vender/usar
+A	.descriptions.Handy_ConfigDictionary.insta_actions_use.name	Usar carta rápido
+A	.descriptions.Handy_ConfigDictionary.insta_actions_use.unlock	El uso depende de {C:attention}#1#{} /   / {C:attention}Mantén{} la tecla y {C:attention}haz clic{} en la carta / para usarla {C:inactive}(si se puede){}
+A	.descriptions.Handy_ConfigDictionary.insta_actions_use_alt.name	Usar carta rápido
+A	.descriptions.Handy_ConfigDictionary.insta_actions_use_alt.unlock	El uso depende de {C:attention}#1#{} /   / {C:attention}Pasa el ratón/agarra{} la carta y {C:attention}pulsa{} la tecla / para usarla {C:inactive}(si se puede){}
+S	.descriptions.Handy_ConfigDictionary.keybinds_trigger_mode.name	Modo de activación de teclas
+S	.descriptions.Handy_ConfigDictionary.me.name	¡Hola, soy yo! Te seguiré...
+A	.descriptions.Handy_ConfigDictionary.me.text	Arte de {C:mult}#1#{}
+S	.descriptions.Handy_ConfigDictionary.me_in_game_over.name	...en la pantalla de derrota
+S	.descriptions.Handy_ConfigDictionary.me_in_game_win.name	...en la pantalla de victoria
+S	.descriptions.Handy_ConfigDictionary.me_in_mod_config.name	...en la configuración del mod
+S	.descriptions.Handy_ConfigDictionary.me_in_screenswipe.name	...en la carta de transición
+S	.descriptions.Handy_ConfigDictionary.misc.name	Varios
+S	.descriptions.Handy_ConfigDictionary.move_highlight.name	Selección precisa
+A	.descriptions.Handy_ConfigDictionary.move_highlight.text	Selección y movimiento precisos de cartas
+A	.descriptions.Handy_ConfigDictionary.move_highlight.unlock	Útil para gestionar cartas cuando hay / muchas en una misma zona /   / {C:attention}Selecciona{} una carta de la zona / y usa los controles indicados
+A	.descriptions.Handy_ConfigDictionary.move_highlight_one_left.name	Selección precisa: una a la izquierda
+A	.descriptions.Handy_ConfigDictionary.move_highlight_one_left.unlock	Puedes {C:attention}mantener{} esta tecla / para avanzar más rápido
+A	.descriptions.Handy_ConfigDictionary.move_highlight_one_right.name	Selección precisa: una a la derecha
+A	.descriptions.Handy_ConfigDictionary.move_highlight_one_right.unlock	Puedes {C:attention}mantener{} esta tecla / para avanzar más rápido
+A	.descriptions.Handy_ConfigDictionary.move_highlight_swap.name	Selección precisa: mover carta
+A	.descriptions.Handy_ConfigDictionary.move_highlight_swap.unlock	{C:attention}Mientras la mantengas{}, se moverá / la propia carta en su lugar
+A	.descriptions.Handy_ConfigDictionary.move_highlight_to_end.name	Selección precisa: mover al extremo
+A	.descriptions.Handy_ConfigDictionary.move_highlight_to_end.unlock	Mientras la {C:attention}mantengas{}, en vez de mover la selección/carta / {C:attention}una a la izquierda/derecha{}, se moverá / al extremo {C:attention}izquierdo/derecho{} respectivamente
+A	.descriptions.Handy_ConfigDictionary.mp_extension.name	Extensión Multiplayer
+A	.descriptions.Handy_ConfigDictionary.mp_extension.text	Funciones específicas de Multiplayer
+S	.descriptions.Handy_ConfigDictionary.mp_extension_animation_skip_mode.name	Saltar animaciones: valor máximo de la sala
+S	.descriptions.Handy_ConfigDictionary.mp_extension_animation_skip_mode_default_value.name	Saltar animaciones: valor máximo por defecto de la sala
+A	.descriptions.Handy_ConfigDictionary.mp_extension_animation_skip_mode_default_value.unlock	Al {C:attention}crear una sala{}, / se usará este valor por defecto
+A	.descriptions.Handy_ConfigDictionary.mp_extension_current_lobby.name	Extensión MP: opciones de la sala actual
+S	.descriptions.Handy_ConfigDictionary.mp_extension_dangerous_actions_mode.name	Acciones peligrosas: modo de la sala
+A	.descriptions.Handy_ConfigDictionary.mp_extension_dangerous_actions_mode.unlock	Permite activar algunas {C:mult}acciones peligrosas{} / para vender en masa
+S	.descriptions.Handy_ConfigDictionary.mp_extension_dangerous_actions_mode_default_value.name	Acciones peligrosas: modo por defecto de la sala
+A	.descriptions.Handy_ConfigDictionary.mp_extension_dangerous_actions_mode_default_value.unlock	Al {C:attention}crear una sala{}, / se usará este valor por defecto
+A	.descriptions.Handy_ConfigDictionary.mp_extension_default_values.name	Extensión MP: opciones por defecto de la sala
+S	.descriptions.Handy_ConfigDictionary.mp_extension_enabled.name	Permitir la extensión Multiplayer
+A	.descriptions.Handy_ConfigDictionary.mp_extension_enabled.unlock	Al marcar esta casilla, {C:attention}TÚ{} permites que / la {C:mult}extensión Multiplayer{} se active en esta sala /   / Solo cuando {C:attention}TODOS{} los jugadores de la sala la tienen activada, / controles como {C:chips}#1#{} y {C:attention}#2#{} / pasan a estar disponibles para {C:attention}TODOS{} los jugadores
+S	.descriptions.Handy_ConfigDictionary.mp_extension_enabled_default_value.name	Permitir extensión MP: valor por defecto
+A	.descriptions.Handy_ConfigDictionary.mp_extension_enabled_default_value.unlock	Al {C:attention}crear o unirte a una sala{}, / se usará este valor por defecto
+S	.descriptions.Handy_ConfigDictionary.mp_extension_speed_multiplier_mode.name	Multiplicador de velocidad: valor máximo de la sala
+S	.descriptions.Handy_ConfigDictionary.mp_extension_speed_multiplier_mode_default_value.name	Multiplicador de velocidad: valor máximo por defecto de la sala
+A	.descriptions.Handy_ConfigDictionary.mp_extension_speed_multiplier_mode_default_value.unlock	Al {C:attention}crear una sala{}, / se usará este valor por defecto
+S	.descriptions.Handy_ConfigDictionary.notifications_level.name	Notificaciones
+S	.descriptions.Handy_ConfigDictionary.presets.name	Configuraciones predefinidas
+A	.descriptions.Handy_ConfigDictionary.presets.text	Distribuciones de ajustes fáciles de alternar
+A	.descriptions.Handy_ConfigDictionary.presets_load_1.name	Configuraciones: cargar la 1
+A	.descriptions.Handy_ConfigDictionary.presets_load_2.name	Configuraciones: cargar la 2
+A	.descriptions.Handy_ConfigDictionary.presets_load_3.name	Configuraciones: cargar la 3
+A	.descriptions.Handy_ConfigDictionary.presets_load_next.name	Configuraciones: cargar la siguiente
+A	.descriptions.Handy_ConfigDictionary.presets_load_next.text	1 -> 2 -> 3 -> 1
+A	.descriptions.Handy_ConfigDictionary.presets_load_next.unlock	Se salta las vacías o desactivadas
+S	.descriptions.Handy_ConfigDictionary.prevent_if_debugplus.name	DebugPlus: evitar conflictos
+A	.descriptions.Handy_ConfigDictionary.prevent_if_debugplus.unlock	No ejecuta ningún control mientras se mantiene {C:chips}#1#{} / para no chocar con los / controles de {C:attention}DebugPlus{} /   / Requiere que {C:attention}«CTRL para atajos»{} esté / activado en los ajustes del mod /   / Como efecto secundario, las teclas / con el botón {C:chips}#1#{} quedan {C:mult}inutilizables{}
+S	.descriptions.Handy_ConfigDictionary.regular_keybinds.name	Teclas normales y del juego original
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds.text	Todos los controles del juego base, y más
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_cash_out.name	Cobrar
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_cash_out.unlock	{C:attention}Mantén{} la tecla para saltarte el cobro / en cuanto esté disponible
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_change_sort_rank.name	Ordenar mano por categoría
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_change_sort_suit.name	Ordenar mano por palo
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_collection.name	Colección
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_copy_log_file.name	Copiar el registro de Lovely
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_copy_log_file.unlock	Por limitaciones técnicas, el registro / se copia {C:attention}como texto{}, no como archivo
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_discard.name	Descartar mano
+S	.descriptions.Handy_ConfigDictionary.regular_keybinds_group_blind_select.name	Selección de ciega
+S	.descriptions.Handy_ConfigDictionary.regular_keybinds_group_game.name	Juego
+S	.descriptions.Handy_ConfigDictionary.regular_keybinds_group_hand.name	Mano
+S	.descriptions.Handy_ConfigDictionary.regular_keybinds_group_menus.name	Menús
+S	.descriptions.Handy_ConfigDictionary.regular_keybinds_group_round.name	Ronda
+S	.descriptions.Handy_ConfigDictionary.regular_keybinds_group_shop.name	Tienda
+S	.descriptions.Handy_ConfigDictionary.regular_keybinds_group_swappable_menus.name	Menús de la partida
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_group_swappable_menus.unlock	Puedes pasar de un menú a otro / con las teclas / {C:attention}sin cerrarlos{} primero
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_leave_shop.name	Salir de la tienda
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_mod_settings.name	Handy: ajustes del mod
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_not_just_yet_interaction.name	NotJustYet: terminar ronda
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_options.name	Opciones
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_options.text	Igual que #1#
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_play.name	Jugar mano
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_quick_restart.name	Reiniciar partida al instante
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_quick_restart.text	#1# del juego original, pero instantáneo
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_quick_restart.unlock	También funciona en la pantalla de {C:attention}derrota{}
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_reload_run.name	Cargar partida
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_reload_run.text	Menú principal -> Continuar partida
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_reload_run.unlock	Simula salir al menú principal / y luego continuar la partida / {C:attention}sin animación{}
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_reroll_boss.name	Cambiar ciega jefe
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_reroll_shop.name	Cambiar tienda
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_restart.name	Reiniciar partida
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_restart.text	#1# del juego original
+S	.descriptions.Handy_ConfigDictionary.regular_keybinds_restart_game.name	Reiniciar Balatro
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_run_info.name	Información de la partida: manos de póker
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_run_info_blinds.name	Información de la partida: ciegas
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_run_info_vouchers.name	Información de la partida: vales
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_save_run.name	Guardar partida
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_save_run.text	Autoguardado, pero manual
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_save_run.unlock	El juego guarda la partida automáticamente tras algunas acciones / {C:inactive}(como jugar mano, descartar o cambiar la tienda){} /   / Esta tecla permite hacerlo manualmente
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_select_blind.name	Seleccionar ciega
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_show_deck_preview.name	Vista previa de la baraja
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_show_deck_preview.text	Igual que pasar el ratón sobre la baraja
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_skip_blind.name	Omitir ciega
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_skip_booster.name	Omitir paquete potenciador
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_skip_booster.unlock	{C:attention}Mantén{} la tecla para omitir el paquete potenciador / en cuanto esté disponible /   / {C:attention}Sigue manteniéndola{} para omitir varios / paquetes {C:attention}seguidos{}
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_start_fantoms_preview.name	Fantom's Preview: calcular puntuación
+S	.descriptions.Handy_ConfigDictionary.regular_keybinds_swappable_overlays_mode.name	Modo de menús de la partida
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_toggle_sort.name	Cambiar orden de la mano
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_toggle_sort.text	Palo > categoría > palo...
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_view_deck.name	Abrir baraja
+A	.descriptions.Handy_ConfigDictionary.regular_keybinds_view_lobby_info.name	Multiplayer: información de la sala
+A	.descriptions.Handy_ConfigDictionary.scoring_hold.name	Pausar puntuación
+A	.descriptions.Handy_ConfigDictionary.scoring_hold.unlock	{C:attention}Mantén{} para pausar las animaciones de puntuación / {C:attention}antes{} de calcular la puntuación final de la mano /   / Útil para recolocar comodines antes de terminar la ronda
+A	.descriptions.Handy_ConfigDictionary.scoring_hold_any_moment.name	Pausar puntuación: en cualquier momento
+A	.descriptions.Handy_ConfigDictionary.scoring_hold_any_moment.unlock	{C:attention}Mantén{} para pausar las animaciones de puntuación / en {C:attention}cualquier momento{} de la puntuación
+S	.descriptions.Handy_ConfigDictionary.show_custom_pip.name	Mostrar teclas en los botones
+A	.descriptions.Handy_ConfigDictionary.show_custom_pip.unlock	Muestra las teclas asignadas sobre / los botones que activan / {C:inactive}(jugar mano, descartar, información de la partida, cambiar, etc.){}
+S	.descriptions.Handy_ConfigDictionary.speed_multiplier.name	Multiplicador de velocidad
+A	.descriptions.Handy_ConfigDictionary.speed_multiplier.text	Aumenta la velocidad del juego
+A	.descriptions.Handy_ConfigDictionary.speed_multiplier.unlock	Como su nombre indica, {C:attention}multiplica{} la velocidad del juego, / así que el valor por defecto siempre es {C:attention}1x{} /   / A partir de {C:attention}#1#{}, acelera / la {C:attention}cola de eventos{} para superar el límite / de 60 acciones por segundo
+S	.descriptions.Handy_ConfigDictionary.speed_multiplier_current_value.name	Multiplicador de velocidad: valor actual
+S	.descriptions.Handy_ConfigDictionary.speed_multiplier_default_value.name	Multiplicador de velocidad: valor al iniciar el juego
+A	.descriptions.Handy_ConfigDictionary.speed_multiplier_divide.name	Multiplicador de velocidad: reducir
+S	.descriptions.Handy_ConfigDictionary.speed_multiplier_load_value.name	Multiplicador de velocidad: conservar entre recargas
+A	.descriptions.Handy_ConfigDictionary.speed_multiplier_load_value.unlock	Sustituye el valor al iniciar el juego
+A	.descriptions.Handy_ConfigDictionary.speed_multiplier_multiply.name	Multiplicador de velocidad: aumentar
+S	.descriptions.Handy_ConfigDictionary.speed_multiplier_settings_toggle.name	Multiplicador de velocidad: opción en ajustes
+A	.descriptions.Handy_ConfigDictionary.speed_multiplier_settings_toggle.unlock	Se coloca junto al ajuste original de {C:attention}velocidad del juego{}
+A	.descriptions.Handy_ConfigDictionary.speed_multiplier_toggle_temp_disabled.name	Multiplicador de velocidad: activar/desactivar
+S	.descriptions.Handy_ConfigDictionary.swap_controller_cursor_stick.name	Mando: cambiar el stick del cursor
+A	.descriptions.Handy_ConfigDictionary.swap_controller_cursor_stick.unlock	Por defecto, {C:chips}#1#{} activa / el cursor integrado del juego. /   / Este ajuste lo cambia a {C:chips}#2#{}
+S	.descriptions.Handy_ConfigDictionary.updater.name	Actualización automática del mod
+A	.descriptions.Handy_ConfigDictionary.updater.text	Sé que eres vago
+S	.descriptions.Handy_ConfigDictionary.updater_auto_install_new_update.name	Instalar automáticamente las actualizaciones
+A	.descriptions.Handy_ConfigDictionary.updater_auto_install_new_update.unlock	La actualización se instalará al {C:attention}iniciar el juego{}
+S	.descriptions.Handy_ConfigDictionary.updater_auto_restart_game_after_update.name	Reiniciar el juego tras actualizar
+S	.descriptions.Handy_ConfigDictionary.updater_notify_about_new_update.name	Avisar de nuevas actualizaciones
+A	.descriptions.Handy_ConfigDictionary.updater_notify_about_new_update.unlock	Verás un aviso al {C:attention}iniciar el juego{}
+S	.descriptions.Handy_ConfigDictionary.updater_target_release_type.name	Tipo de versión
+A	.descriptions.Handy_Other.better_mouse_and_gamepad_in_hand_selection.text	{C:mult,s:1.5}Ups...{} /   / Parece que tienes instalado {C:attention}Better Mouse and Gamepad{}. / Tengo 2 noticias: una {C:mult}mala{} y una {C:green}buena{}. /   / La {C:mult}mala{} es que {C:attention}BMaG{} sustituye por completo la selección de mano de {C:chips}Handy{} / y rompe botones como / {C:chips}[rueda arriba/abajo]{}, {C:chips}[botón central]{}, {C:chips}[clic derecho]{} y más. /   / La {C:green}buena{} es que {C:chips}Handy{} incluye {C:inactive,s:0.75}casi{} todos sus controles, / así que puedes desinstalar {C:attention}BMaG{} sin perder nada. /   / O puedes seguir usando {C:attention}ambos mods{}; casi siempre irá bien. / {s:0.8}Aunque no me guste, ¿quién soy yo para decirte qué mods usar?{}
+A	.descriptions.Handy_Other.cant_use_in_mp.text	Este control está desactivado en {C:mult}Multiplayer{}
+A	.descriptions.Handy_Other.cant_use_with_gamepad.text	Este control está desactivado con {C:attention}mando{}
+A	.descriptions.Handy_Other.conflict_mods.text	Este control está inactivo por otros mods:
+A	.descriptions.Handy_Other.missing_deps.text	Este control está inactivo hasta que se activen / los controles indicados:
+A	.descriptions.Handy_Other.missing_req_mods.text	Este control necesita otros mods para funcionar:
+A	.descriptions.Handy_Other.mp_extension_empty.text	Instala {C:mult}Multiplayer{} para ver / ajustes adicionales aquí / {C:inactive}Las funciones de la 1.0 están en desarrollo{}
+A	.descriptions.Handy_Other.mp_lobby_require_all_hint.text	Los ajustes de sala indicados solo tienen efecto si / {C:attention}TODOS{} los miembros tienen instalado {C:chips}Handy v2.0{} o superior
+A	.descriptions.Handy_Other.overall_title.text	- Desliza para seleccionar cartas / - Atajos de teclado en partida / - Más velocidad de juego / - Quitar animaciones / - Compatible con mando /   / - Los controles se pueden asignar a {C:chips}cualquier combinación{} /   de teclado, ratón o mando /   y activar/desactivar en {C:chips}cualquier momento{} /   sin reiniciar el juego ni recargar la partida / - {C:chips}No{} desactiva los logros
+S	.descriptions.Handy_Preset.full_default.name	Restablecer por defecto
+A	.descriptions.Handy_Preset.full_default.text	Restablece toda la configuración por defecto
+S	.misc.dictionary.b_handy_install	Instalar
+S	.misc.dictionary.b_handy_mp_extension	Extensión Multiplayer
+S	.misc.dictionary.b_handy_open_github	Abrir en GitHub
+S	.misc.dictionary.b_handy_restart_game	Reiniciar juego
+S	.misc.dictionary.handy_advanced_mode	Modo avanzado
+S	.misc.dictionary.handy_advanced_mode_description	Más control e información
+S	.misc.dictionary.handy_buy_sell_use_mode_hold_n_click	Mantener tecla + clic en carta
+S	.misc.dictionary.handy_buy_sell_use_mode_hover_n_press	Pasar ratón o agarrar carta + pulsar tecla
+S	.misc.dictionary.handy_current_device_auto	Automático
+S	.misc.dictionary.handy_current_device_gamepad	Mando
+S	.misc.dictionary.handy_current_device_keyboard	Ratón + teclado
+A	.misc.dictionary.handy_dangerous_actions_mass_sell_remove_mode	Afecta a todas las cartas / Afecta a todas salvo la elegida
+S	.misc.dictionary.handy_disabled	Desactivado
+S	.misc.dictionary.handy_example_state_panel	Aquí aparecen varios avisos
+S	.misc.dictionary.handy_gamepad_2step_adjust	para ajustar
+S	.misc.dictionary.handy_gamepad_2step_deselect	para deseleccionar
+S	.misc.dictionary.handy_gamepad_2step_select	para seleccionar
+S	.misc.dictionary.handy_keybinds_trigger_mode_press	Al pulsar la tecla
+S	.misc.dictionary.handy_keybinds_trigger_mode_release	Al soltar la tecla
+S	.misc.dictionary.handy_mod_disabled	Mod desactivado
+S	.misc.dictionary.handy_mod_enabled	Mod activado
+S	.misc.dictionary.handy_modals_move_highlight_preview_description	Usa la vista previa para probar los controles
+S	.misc.dictionary.handy_modals_preview_description	Usa la vista previa para ver el efecto de los ajustes
+A	.misc.dictionary.handy_modals_start_calculation	Iniciar / cálculo
+A	.misc.dictionary.handy_modals_stop_calculation	Detener / cálculo
+S	.misc.dictionary.handy_mp_animation_skip_mode	Saltar animaciones: valor máximo de la sala
+S	.misc.dictionary.handy_mp_dangerous_actions_mode	Acciones peligrosas: modo de la sala
+A	.misc.dictionary.handy_mp_dangerous_actions_modes	Desactivado / Venta masiva / Venta y eliminación masivas
+S	.misc.dictionary.handy_mp_extension_status_disabled	La extensión Multiplayer está DESACTIVADA por TI en esta sala
+S	.misc.dictionary.handy_mp_extension_status_disabled_by_other_player	La extensión Multiplayer está DESACTIVADA por OTROS jugadores en esta sala
+S	.misc.dictionary.handy_mp_extension_status_disabled_by_ruleset	La extensión Multiplayer está DESACTIVADA por las REGLAS en esta sala
+S	.misc.dictionary.handy_mp_extension_status_enabled	La extensión Multiplayer está ACTIVADA en esta sala
+S	.misc.dictionary.handy_mp_extension_status_not_initialized	La extensión Multiplayer NO ESTÁ CARGADA en esta sala
+S	.misc.dictionary.handy_mp_speed_multiplier_mode	Multiplicador de velocidad: valor máximo de la sala
+S	.misc.dictionary.handy_notification_level_all	Todas
+S	.misc.dictionary.handy_notification_level_dangerous	Solo peligrosas
+S	.misc.dictionary.handy_notification_level_essential	Esenciales
+S	.misc.dictionary.handy_notification_level_none	Ninguna
+A	.misc.dictionary.handy_regular_keybinds_swappable_overlays_mode	Pulsar para abrir / Pulsar para abrir / Pulsar otra vez para cerrar / Mantener para abrir / Soltar para cerrar
+S	.misc.dictionary.handy_release_type_pre_release	Versión previa
+S	.misc.dictionary.handy_release_type_stable	Estable
+A	.misc.dictionary.handy_show_custom_pip_mode	Ninguno / Solo con mando / Siempre
+S	.misc.dictionary.handy_smods_compat_mode	Modo compatible: cargar desde .zip requiere un SMODS actualizado
+S	.misc.dictionary.handy_updater_no_release_found	No se han encontrado datos de la versión
+S	.misc.dictionary.handy_updater_status_already_installed	Instalado: reinicia el juego
+S	.misc.dictionary.handy_updater_status_busy	Espera, por favor...
+S	.misc.dictionary.handy_updater_status_current_version	Versión actual
+S	.misc.dictionary.handy_updater_status_new_version_available	Nueva versión disponible
+S	.misc.dictionary.handy_updater_status_no_data	Sin datos de la versión
+S	.misc.dictionary.handy_updater_status_ready_for_installation	Lista para instalar
+S	.misc.dictionary.k_handy_preview_buy	Comprar
+S	.misc.dictionary.k_handy_preview_buy_n_sell	Comprar y vender
+S	.misc.dictionary.k_handy_preview_buy_n_use	Comprar y usar
+S	.misc.dictionary.k_handy_preview_remove	ELIMINAR
+S	.misc.dictionary.k_handy_preview_sell	Vender
+S	.misc.dictionary.k_handy_preview_use	Usar
+S	.misc.dictionary.ph_handy_dangerous_actions_remove_all	Eliminar TODO
+S	.misc.dictionary.ph_handy_dangerous_actions_remove_all_same	Eliminar todas las iguales
+S	.misc.dictionary.ph_handy_dangerous_actions_remove_one	Eliminar una
+S	.misc.dictionary.ph_handy_dangerous_actions_sell_all	Vender TODO
+S	.misc.dictionary.ph_handy_dangerous_actions_sell_all_same	Vender todas las iguales
+S	.misc.dictionary.ph_handy_dangerous_actions_sell_one	Vender una
+S	.misc.dictionary.ph_handy_notif_reload_item_prototypes	Depuración: prototipos de objetos recargados
+S	.misc.dictionary.ph_handy_notif_reload_localization	Depuración: idioma recargado
+S	.misc.handy_tabs.Animations	Animaciones
+S	.misc.handy_tabs.Debug	Desarrollo
+S	.misc.handy_tabs.Fast hand selection	Selección de mano
+S	.misc.handy_tabs.Game	Juego
+S	.misc.handy_tabs.General	General
+S	.misc.handy_tabs.Hand & Round	Mano/ronda
+S	.misc.handy_tabs.Highlight movement	Selección precisa
+S	.misc.handy_tabs.Hold	Mantener
+S	.misc.handy_tabs.MP Extension	Multiplayer
+S	.misc.handy_tabs.Menus	Menús
+S	.misc.handy_tabs.Misc	Varios
+S	.misc.handy_tabs.Overall	General
+S	.misc.handy_tabs.Quick buy/sell/use	Comprar, vender y usar
+S	.misc.handy_tabs.Round	Ronda
+S	.misc.handy_tabs.Shop & Blind Select	Tienda/ciegas
+S	.misc.handy_tabs.Speed	Velocidad
+S	.misc.handy_tabs.Speed & Animations	Velocidad y animaciones
+S	.misc.handy_tabs.Thunderstore	Thunderstore
+S	.misc.handy_tabs.Updater	Actualizaciones
+S	.misc.handy_tabs.Updater Settings	Ajustes
+S	.misc.handy_tabs.Vanilla keybinds	Teclas
+S	.misc.v_dictionary.Handy_binding_cancel_reason_multiple_no_hold	La combinación no puede tener varias teclas que no se puedan mantener
+S	.misc.v_dictionary.Handy_binding_cancel_reason_no_hold	No se puede asignar #1# aquí porque no se puede mantener
+S	.misc.v_dictionary.Handy_binding_cancel_reason_no_safe	No se puede asignar #1# aquí para evitar bloqueos
+S	.misc.v_dictionary.Handy_binding_canceled	Asignación cancelada
+S	.misc.v_dictionary.Handy_binding_esc_hint	Pulsa #1# para guardar
+S	.misc.v_dictionary.Handy_binding_finished	Asignación terminada: #1#
+S	.misc.v_dictionary.Handy_binding_guide	Pulsa teclas para añadirlas a la combinación
+S	.misc.v_dictionary.Handy_binding_progress	Asignando: #1#
+S	.misc.v_dictionary.Handy_disabled_in_mp	[desactivado por Multiplayer]
+S	.misc.v_dictionary.Handy_load_run_done	Partida cargada
+S	.misc.v_dictionary.Handy_load_run_nothing_to_load	No hay partida que cargar
+S	.misc.v_dictionary.Handy_log_file_copied	Registro de Lovely copiado al portapapeles
+S	.misc.v_dictionary.Handy_new_pre_release_available	Nueva versión previa disponible
+S	.misc.v_dictionary.Handy_new_release_description	Ve a los ajustes del mod para ver detalles y descargarla
+S	.misc.v_dictionary.Handy_new_stable_available	Nueva versión estable disponible
+S	.misc.v_dictionary.Handy_preset_example_loaded	Configuración predefinida [#1#] cargada
+S	.misc.v_dictionary.Handy_preset_saved	Configuración #1# [#2#] guardada
+S	.misc.v_dictionary.Handy_prevented_by_debugplus	Bloqueado por DebugPlus
+S	.misc.v_dictionary.Handy_reload_run_done	Partida recargada
+S	.misc.v_dictionary.Handy_reload_run_nothing_to_load	No hay partida que recargar
+S	.misc.v_dictionary.Handy_scoring_hold_hand_score	Puntuación de la mano: [#1#]
+S	.misc.v_dictionary.Handy_temp_disabled	[desactivado]
+S	.misc.v_dictionary.Handy_updater_auto_restart	Reiniciando el juego para aplicar los cambios...
+S	.misc.v_dictionary.Handy_updater_finish_cannot_move_files	No se pueden instalar los archivos de la versión
+S	.misc.v_dictionary.Handy_updater_finish_cannot_unzip	No se pueden extraer los archivos de la versión
+S	.misc.v_dictionary.Handy_updater_finish_cannot_write_zip	No se pueden guardar los archivos de la versión
+S	.misc.v_dictionary.Handy_updater_finish_check_request_failed	No se pueden comprobar las versiones disponibles
+S	.misc.v_dictionary.Handy_updater_finish_description	Reinicia el juego para aplicar los cambios
+S	.misc.v_dictionary.Handy_updater_finish_download_request_failed	No se puede descargar la versión
+S	.misc.v_dictionary.Handy_updater_finish_fetcher_error	Error inesperado
+S	.misc.v_dictionary.Handy_updater_finish_invalid_server_response	Respuesta del servidor no válida
+S	.misc.v_dictionary.Handy_updater_finish_no_connection	Sin conexión a internet
+S	.misc.v_dictionary.Handy_updater_finish_no_data_to_replace	No hay archivos de la versión que instalar
+S	.misc.v_dictionary.Handy_updater_finish_no_fetcher	No hay ninguna API disponible para las peticiones
+S	.misc.v_dictionary.Handy_updater_finish_no_release	No se ha encontrado ninguna versión
+S	.misc.v_dictionary.Handy_updater_finish_success	Versión instalada correctamente
+S	.misc.v_dictionary.Handy_updater_progress_downloading_release	Descargando versión...
+S	.misc.v_dictionary.Handy_updater_progress_getting_releases	Obteniendo versiones...
+S	.misc.v_dictionary.Handy_updater_progress_installing_files	Instalando versión...
+S	.misc.v_dictionary.Handy_updater_progress_unzipping_archive	Descomprimiendo versión...
+S	.misc.v_dictionary.Handy_version_by	v#1# de #2#

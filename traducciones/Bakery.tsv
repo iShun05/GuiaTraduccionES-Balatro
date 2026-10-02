@@ -1,0 +1,313 @@
+S	.descriptions.Back.b_Bakery_Credit.name	Baraja de crédito
+A	.descriptions.Back.b_Bakery_Credit.text	Empiezas con {C:money}$#1#{} extra / {C:red}No ganas dinero{} / de ninguna fuente
+A	.descriptions.Back.b_Bakery_Credit.unlock	Gana una partida con / {C:attention}#1#{} / en dificultad / {V:1}#2#{} o superior
+S	.descriptions.Back.b_Bakery_DN.name	Baraja D&D
+A	.descriptions.Back.b_Bakery_DN.text	Todas las {C:green}probabilidades{} se tiran / con {C:attention}ventaja / {C:inactive}(Tira dos veces y quédate con el mejor resultado)
+S	.descriptions.Back.b_Bakery_Dominion.name	Baraja Dominion
+A	.descriptions.Back.b_Bakery_Dominion.text	Empiezas con {C:red}-#1#{} de tamaño de mano / y {C:attention}#2# comodines #3#{}; / {C:attention}+#4#{} de tamaño de mano / cada {C:attention}#5#{} apuestas iniciales
+A	.descriptions.Back.b_Bakery_Dominion.unlock	Ten al menos {C:attention}#1# / copias de un mismo {C:attention}comodín
+S	.descriptions.Back.b_Bakery_House.name	Baraja de la casa
+A	.descriptions.Back.b_Bakery_House.text	Cada carta jugada tiene / {C:green}#1# en #2#{} probabilidades / de cambiar de categoría y palo / tras puntuar la mano
+A	.descriptions.Back.b_Bakery_House.unlock	Gana una partida con / {C:attention}#1#{} / en cualquier dificultad
+S	.descriptions.Back.b_Bakery_LoneStar.name	Baraja estrella solitaria
+A	.descriptions.Back.b_Bakery_LoneStar.text	{C:attention}-1{} de tamaño de mano; / los descartes se recargan en cada mano; / se roban {C:attention}5{} cartas bocabajo / que no se pueden descartar; / juegas la mano entera / y anotan las {C:attention}5{} mejores cartas
+A	.descriptions.Back.b_Bakery_LoneStar.unlock	Gana una partida con / {C:attention}#1#{} / en cualquier dificultad
+S	.descriptions.Back.b_Bakery_Violet.name	Baraja violeta
+A	.descriptions.Back.b_Bakery_Violet.text	Da multi {X:mult,C:white}X#1#{}
+A	.descriptions.Back.b_Bakery_Violet.unlock	Derrota a {C:purple}#1#
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_AnaglyphLens.name	Lente anaglifo
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_AnaglyphLens.text	Las manos de póker se determinan / como si la {C:attention}primera{} carta / estuviera {C:attention}duplicada
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_AnaglyphLens.unlock	Ten {C:attention}#1# #2# / a la vez
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_BubbleFruit.name	Fruta burbuja
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_BubbleFruit.text	Las {C:blue}manos{} y los {C:red}descartes / se {C:attention}comparten
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_BubbleFruit.unlock	Te quedan {C:attention}#1# {C:blue}manos
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_Cogwheel.name	Engranaje
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Cogwheel.text	{C:attention}-#1#{} apuestas iniciales, / {C:attention}-#2#{} carta en la tienda
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Cogwheel.unlock	Supera la apuesta inicial {C:attention}#1#
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_Coin.name	Moneda
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Coin.text	Ganas {C:attention}interés{} / por cada {C:money}$#1# / {C:inactive}(en lugar de cada {C:money}$5{C:inactive})
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_CrackedMarble.name	Canica agrietada
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_CrackedMarble.text	{C:spectral}#1#{} aparece / {C:white,X:spectral}#2#X{} más a menudo
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_DuctTape.name	Cinta americana
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_DuctTape.text	Los {C:attention}comodines{} {C:common}comunes{} y {C:uncommon}poco comunes / no aparecen / {C:red}No se puede quitar
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_Epitaph.name	Epitafio
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Epitaph.text	Las cartas de {C:attention}piedra{} jugadas / ganan {C:money}$#1#{} al anotar
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Epitaph.unlock	Ten solo cartas que / {C:attention}siempre anotan{} en tu baraja
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_Extroversion.name	Extroversión
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Extroversion.text	Las cartas de {C:attention}tarot{} y {C:attention}planeta{} / no aparecen en la tienda
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_Fortuna.name	Fortuna
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Fortuna.text	{C:tarot}#1#{} nunca / añade {C:dark_edition}#2#{} ni {C:dark_edition}#3#
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_Fractal.name	Fractal
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Fractal.text	Gana {C:money}$#1#{} al final de la ronda / El pago aumenta en {C:money}$#2#{} / al derrotar cualquier {C:attention}ciega
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Fractal.unlock	Endéudate {C:money}$#1# / en {C:red}negativo
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_FullMoon.name	Luna llena
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_FullMoon.text	Todos los {C:attention}hombres lobo{} están / siempre en su fase nocturna
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_FullMoon.unlock	Ten {C:attention}3 hombres lobo / a la vez
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_Introversion.name	Introversión
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Introversion.text	Los {C:attention}comodines{} no / aparecen en la tienda
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_Marm.name	Marm
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Marm.text	Todas las manos son {C:attention}pareja{} / Todas las {C:attention}cartas jugadas / cuentan para la puntuación
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Marm.unlock	Gana una partida jugando / solo {C:attention}parejas{}
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_MementoMori.name	Memento mori
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_MementoMori.text	Los {C:attention}paquetes arcanos / solo tienen {C:tarot}#1#
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_MementoMori.unlock	Haz que {C:attention}todas{} las cartas / de tu {C:attention}baraja completa / sean idénticas
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_MilkyWay.name	Vía Láctea
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_MilkyWay.text	Todas las cartas de {C:tarot}tarot{} / son {C:planet}planetas{}; / todos los {C:planet}planetas{} son / {C:white,X:planet}#1#X{} más fuertes
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_MilkyWay.unlock	Usa {C:spectral}#1#{} / {C:attention}#2#{} veces en total / {C:inactive}(#3#)
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_Obsession.name	Obsesión
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Obsession.text	Puedes {C:attention}descartar / {C:attention}0 cartas{} para / ganar {C:money}$#1#{}
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Obsession.unlock	Gana una partida sin / descartar ni una sola carta
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_OopsAll20s.name	¡Ups! Todo 20
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_OopsAll20s.text	Duplica todas las {C:green,E:1,S:1.1}probabilidades / {C:attention}indicadas / {C:inactive}(p. ej.: {C:green}1 en 3{C:inactive} -> {C:green}2 en 3{C:inactive})
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_OrdinaryStone.name	Piedra corriente
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_OrdinaryStone.text	Tu {C:attention}baraja{} no / se baraja
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_OrdinaryStone.unlock	Descubre al menos / {C:attention}#1#{} amuletos
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_Palette.name	Paleta
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Palette.text	Los {C:attention}colores{} se pueden / formar con al menos / {C:attention}4 palos
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Palette.unlock	Ten al menos {C:attention}#1# / cartas del mismo / {C:attention}palo{} en tu baraja
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_Pedigree.name	Pedigrí
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Pedigree.text	Los {C:attention}fulls{} se pueden / formar con {C:attention}palos{} / {C:inactive}(además de con {C:attention}categorías{C:inactive})
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_PetriDish.name	Placa de Petri
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_PetriDish.text	{C:attention}+#1#{} espacios de consumibles
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_PetriDish.unlock	Copia {C:legendary}#1# / con {C:tarot}#2#
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_PieChart.name	Gráfico de tarta
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_PieChart.text	Elige entre {C:attention}#1# etiquetas / al omitir una {C:attention}ciega
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_PieChart.unlock	Completa el desafío / {C:attention}#1#{}
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_Posterization.name	Posterización
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Posterization.text	Las cartas de {C:colourcard}color{} solo / ocupan {C:attention}medio{} espacio
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Posterization.unlock	Ten una carta de {C:colourcard}color{} / con {C:attention}#1#{} activaciones
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_PrintError.name	Error de impresión
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_PrintError.text	Las impresoras imprimen dos veces
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_PrintError.unlock	Ten al menos / {C:attention}#1# contratos
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_Radiation.name	Radiación
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Radiation.text	{C:red}Destruye la {C:attention}mitad{} de tu baraja / al seleccionar la {C:attention}ciega
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Radiation.unlock	Ten {C:red}0{} cartas en / tu {C:attention}baraja completa
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_Revolve.name	Rotación
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Revolve.text	{C:attention}Omitir{} un {C:attention}paquete potenciador / te lo {C:money}reembolsa
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_Rune.name	Runa
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Rune.text	Puedes {C:attention}descartar / {C:attention}0 cartas{} para crear / una carta de {C:tarot}tarot / {C:inactive}(Debe haber espacio)
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Rune.unlock	Ten al menos {C:attention}#1# / cartas en la mano
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_Serpent.name	La serpiente
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Serpent.text	Tras {C:attention}jugar{} o {C:attention}descartar{}, / roba siempre {C:attention}3{} cartas
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Serpent.unlock	Pierde contra {C:Bakery_serpent}#1#
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_Toadem.name	Sapotótem
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Toadem.text	Si anotan {C:attention}#1#{} o más cartas / del {C:attention}mismo palo{}, / se {C:red}destruyen
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Toadem.unlock	Juega {C:attention}exactamente #1#{} cartas con / la misma {C:attention}categoría{} y {C:attention}palo
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_Virus.name	Virus
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Virus.text	{C:green}Infecta{} una carta no infectada / aleatoria de la mano tras puntuar
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Virus.unlock	Ten {C:attention}solo{} {C:green}cartas infectadas
+S	.descriptions.BakeryCharm.BakeryCharm_Bakery_Void.name	Vacío
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Void.text	Las cartas {C:dark_edition}negativas{} aparecen / {X:dark_edition,C:white}#1#X{} más a menudo
+A	.descriptions.BakeryCharm.BakeryCharm_Bakery_Void.unlock	Ten al menos / {C:attention}#1# comodines
+S	.descriptions.Blind.bl_Bakery_Aleph.name	El líder
+A	.descriptions.Blind.bl_Bakery_Aleph.text	-1 mano / -1 descarte
+S	.descriptions.Blind.bl_Bakery_He.name	El solista
+A	.descriptions.Blind.bl_Bakery_He.text	Solo anota / {C:attention}una carta
+S	.descriptions.Blind.bl_Bakery_Kaf.name	La construcción
+A	.descriptions.Blind.bl_Bakery_Kaf.text	Sin fichas base
+S	.descriptions.Blind.bl_Bakery_Qof.name	La bruja
+A	.descriptions.Blind.bl_Bakery_Qof.text	Añade {C:attention}#1#{} {C:purple}maldiciones / a tu baraja
+S	.descriptions.Blind.bl_Bakery_Samekh.name	El regidor
+A	.descriptions.Blind.bl_Bakery_Samekh.text	Las cartas sin categoría / ni palo se debilitan
+S	.descriptions.Blind.bl_Bakery_Tsadi.name	El desgaste
+A	.descriptions.Blind.bl_Bakery_Tsadi.text	{C:red}-#1#{} multi / antes de puntuar
+S	.descriptions.Edition.e_Bakery_Carbon.name	Carbono
+A	.descriptions.Edition.e_Bakery_Carbon.text	Se {C:red}autodestruye / tras puntuar
+S	.descriptions.Enhanced.m_Bakery_Curse.name	Maldición
+A	.descriptions.Enhanced.m_Bakery_Curse.text	Sin categoría ni palo
+S	.descriptions.Enhanced.m_Bakery_TimeWalk.name	Paseo temporal
+A	.descriptions.Enhanced.m_Bakery_TimeWalk.text	{C:blue}+#1#{} mano / Sin categoría ni palo
+S	.descriptions.Joker.j_Bakery_3So.name	3 de Sō
+A	.descriptions.Joker.j_Bakery_3So.text	Gana {C:mult}+#1#{} multi si las cartas que anotan / contienen una {C:attention}escalera de #2# cartas / {C:inactive}(Actual: {C:mult}+#3# {C:inactive}multi)
+S	.descriptions.Joker.j_Bakery_Auctioneer.name	Subastador
+A	.descriptions.Joker.j_Bakery_Auctioneer.text	Al seleccionar la {C:attention}ciega{}, / {C:money}vende{} el comodín de la derecha / por {C:attention}#1#x{} su valor de venta
+S	.descriptions.Joker.j_Bakery_Awarewolf.name	Hombre lobo consciente (día)
+A	.descriptions.Joker.j_Bakery_Awarewolf.text	{C:attention}+#1#{} de tamaño de mano / {C:attention}Transforma{} este comodín / al final de la ronda si / {C:attention}no se usaron descartes
+S	.descriptions.Joker.j_Bakery_Awarewolf_Back.name	Hombre lobo consciente (noche)
+A	.descriptions.Joker.j_Bakery_Awarewolf_Back.text	{C:attention}+#1#{} de tamaño de mano / {C:attention}Transforma{} este comodín / al final de la ronda / si se usaron {C:attention}2 o más / {C:attention}descartes
+S	.descriptions.Joker.j_Bakery_AwfulTodd.name	Todd el impar
+A	.descriptions.Joker.j_Bakery_AwfulTodd.text	{C:red}Destruye{} todas las cartas anotadas / de categoría {C:attention}impar / {C:inactive}(A, 3, 5, 7, 9)
+S	.descriptions.Joker.j_Bakery_BongardProblem.name	Problema de Bongard
+A	.descriptions.Joker.j_Bakery_BongardProblem.text	Multi {X:mult,C:white}X#1#{} si / las cartas que anotan de más / a la izquierda y a la derecha / son de {C:attention}palos{} distintos
+S	.descriptions.Joker.j_Bakery_CardSleeve.name	Funda de carta
+A	.descriptions.Joker.j_Bakery_CardSleeve.text	{C:attention}Guarda{} una / carta de juego
+S	.descriptions.Joker.j_Bakery_CoinSlot.name	Ranura de monedas
+A	.descriptions.Joker.j_Bakery_CoinSlot.text	Gana {C:mult}+#1#{} multi / por cada {C:money}$#2#{} metidos / en la ranura / {C:inactive}(Actual: {C:mult}+#3#{C:inactive} multi)
+S	.descriptions.Joker.j_Bakery_Don.name	Don
+A	.descriptions.Joker.j_Bakery_Don.text	Multi {X:mult,C:white}X#1#{} / Pierdes {C:money}$#2#{} por mano jugada
+S	.descriptions.Joker.j_Bakery_Estate.name	Finca
+A	.descriptions.Joker.j_Bakery_Estate.text	{C:chips}+#1#{} fichas, {C:mult}+#2#{} multi / {C:inactive}(Más cuanto más a la derecha)
+S	.descriptions.Joker.j_Bakery_EvilSteven.name	Steven el par
+A	.descriptions.Joker.j_Bakery_EvilSteven.text	{C:red}Destruye{} todas las cartas anotadas / de categoría {C:attention}par / {C:inactive}(2, 4, 6, 8, 10)
+S	.descriptions.Joker.j_Bakery_GetOutOfJailFreeCard.name	Carta de «Salga de la cárcel»
+A	.descriptions.Joker.j_Bakery_GetOutOfJailFreeCard.text	{C:attention}Úsala{} para tener multi {X:mult,C:white}X#1#{} durante {C:attention}una mano / {C:inactive}Puedes guardar esta carta / {C:inactive}hasta necesitarla o venderla
+S	.descriptions.Joker.j_Bakery_GlassCannon.name	Cañón de cristal
+A	.descriptions.Joker.j_Bakery_GlassCannon.text	Multi {X:mult,C:white}X#1#{} / Se {C:red}autodestruye{} si después / el multi es {C:attention}#2# o más
+S	.descriptions.Joker.j_Bakery_JokerAgainstHumanity.name	Comodín contra la Humanidad
+A	.descriptions.Joker.j_Bakery_JokerAgainstHumanity.text	Gana {C:chips}+#1#{} fichas si la {C:attention}mano de póker{} / jugada es de {C:attention}nivel 1{} / {C:inactive}(Actual: {C:chips}+#2#{C:inactive} fichas){}
+S	.descriptions.Joker.j_Bakery_Lua.name	Comodín Lua
+A	.descriptions.Joker.j_Bakery_Lua.text	Multi {X:mult,C:white}X#1#{}, / multi {X:mult,C:white}.."#2#"{}
+S	.descriptions.Joker.j_Bakery_PlayingCard.name	1 de picas
+A	.descriptions.Joker.j_Bakery_PlayingCard.text	Da el {C:mult}multi{} y las {C:chips}fichas / de la {C:attention}carta alta
+A	.descriptions.Joker.j_Bakery_PlayingCard.unlock	Sube la {C:attention}carta alta / a nivel {C:attention}#1#
+S	.descriptions.Joker.j_Bakery_PlayingCard11.name	11 de picas
+A	.descriptions.Joker.j_Bakery_PlayingCard11.text	Da el {C:mult}multi{} y las {C:chips}fichas / de la {C:attention}pareja
+A	.descriptions.Joker.j_Bakery_PlayingCard11.unlock	Sube la {C:attention}pareja / a nivel {C:attention}#1#
+S	.descriptions.Joker.j_Bakery_Proxy.name	Apoderado
+A	.descriptions.Joker.j_Bakery_Proxy.text	Copia la habilidad del último / {C:attention}comodín{} que compraste / {C:inactive}(Actual: {C:attention}#1#{C:inactive})
+A	.descriptions.Joker.j_Bakery_Proxy.unlock	Ten {C:attention}#1# / y {C:attention}#2# / a la vez
+S	.descriptions.Joker.j_Bakery_Pyrite.name	Pirita
+A	.descriptions.Joker.j_Bakery_Pyrite.text	Roba {C:attention}#1#{} cartas extra / en la {C:attention}primera mano{} de la ronda
+S	.descriptions.Joker.j_Bakery_Snowball.name	Bola de nieve
+A	.descriptions.Joker.j_Bakery_Snowball.text	Gana {C:chips}+#1#{} fichas / al seleccionar la {C:attention}ciega / {C:inactive}(Actual: {C:chips}+#2#{C:inactive} fichas)
+S	.descriptions.Joker.j_Bakery_Spinner.name	Ruleta giratoria
+A	.descriptions.Joker.j_Bakery_Spinner.text	Da la bonificación de {C:attention}abajo / Gira en el {C:attention}sentido de las agujas del reloj / al final de la {C:attention}ronda
+S	.descriptions.Joker.j_Bakery_StickerSheet.name	Hoja de pegatinas
+A	.descriptions.Joker.j_Bakery_StickerSheet.text	Cada {C:attention}pegatina{} de un comodín / da multi {X:mult,C:white}X#1#{}
+A	.descriptions.Joker.j_Bakery_StickerSheet.unlock	Ten un comodín {C:attention}eterno / {C:attention}de alquiler
+S	.descriptions.Joker.j_Bakery_Tag.name	Etiqueta
+A	.descriptions.Joker.j_Bakery_Tag.text	Las {C:attention}etiquetas{} dan multi {X:mult,C:white}X#1#{}
+S	.descriptions.Joker.j_Bakery_Tarmogoyf.name	Tarmogoyf
+A	.descriptions.Joker.j_Bakery_Tarmogoyf.text	{C:red}+#1#{} multi por cada categoría {C:attention}distinta / descartada esta {C:attention}ronda / {C:inactive}(Actual: {C:red}+#2#{C:inactive} multi)
+S	.descriptions.Joker.j_Bakery_TierList.name	Lista de niveles
+A	.descriptions.Joker.j_Bakery_TierList.text	Multi {X:mult,C:white}X#1#{} por cada {C:attention}rareza / {C:attention}distinta{} entre tus {C:attention}comodines / {C:inactive}(Actual: multi {X:mult,C:white}X#2#{C:inactive})
+S	.descriptions.Joker.j_Bakery_TransparentBackBuffer.name	Búfer trasero transparente
+A	.descriptions.Joker.j_Bakery_TransparentBackBuffer.text	{C:mult}+#1#{} multi por carta anotada / si la mano jugada alterna / palos {C:attention}rojos{} y {C:attention}negros
+S	.descriptions.Joker.j_Bakery_Warewolf.name	Lobo almacenero (día)
+A	.descriptions.Joker.j_Bakery_Warewolf.text	Crea una carta de {C:tarot}tarot / al seleccionar la {C:attention}ciega / Si no hay espacio, {C:attention}transforma / este comodín en su lugar
+S	.descriptions.Joker.j_Bakery_Warewolf_Back.name	Lobo almacenero (noche)
+A	.descriptions.Joker.j_Bakery_Warewolf_Back.text	{C:red}Destruye{} un {C:attention}consumible aleatorio{} y / gana {C:money}$#1#{} al seleccionar la {C:attention}ciega / Si no hay ninguno, {C:attention}transforma / este comodín en su lugar
+S	.descriptions.Joker.j_Bakery_Wearwolf.name	Lobo vestido (día)
+A	.descriptions.Joker.j_Bakery_Wearwolf.text	Gana {C:mult}+#1#{} multi si / la mano jugada contiene / {C:attention}#2# / Si no, se {C:attention}transforma
+S	.descriptions.Joker.j_Bakery_Wearwolf_Back.name	Lobo vestido (noche)
+A	.descriptions.Joker.j_Bakery_Wearwolf_Back.text	{C:mult}+#3#{} multi / Se {C:attention}transforma{} si la mano jugada / contiene {C:attention}#2#
+S	.descriptions.Joker.j_Bakery_Wearywolf.name	Lobo cansado (día)
+A	.descriptions.Joker.j_Bakery_Wearywolf.text	Se {C:attention}transforma{} tras / #1# rondas {C:inactive}[#2#]
+S	.descriptions.Joker.j_Bakery_Wearywolf_Back.name	Lobo cansado (noche)
+A	.descriptions.Joker.j_Bakery_Wearywolf_Back.text	Evita la muerte / si las fichas obtenidas / son al menos un {C:attention}#3# % / de lo requerido / Se {C:attention}transforma
+S	.descriptions.Joker.j_Bakery_Weerewolf.name	Lobito (día)
+A	.descriptions.Joker.j_Bakery_Weerewolf.text	{C:mult}+#1#{} multi / {C:attention}Transforma{} este comodín / al final de la ronda si / anotó un {C:attention}2
+S	.descriptions.Joker.j_Bakery_Weerewolf_Back.name	Lobito (noche)
+A	.descriptions.Joker.j_Bakery_Weerewolf_Back.text	Multi {X:mult,C:white}X#1#{} / {C:attention}Transforma{} este comodín / al final de la ronda / si no anotó ningún {C:attention}2
+S	.descriptions.Joker.j_Bakery_Werewolf.name	Hombre lobo (día)
+A	.descriptions.Joker.j_Bakery_Werewolf.text	Multi {X:mult,C:white}X#1#{} / {C:attention}Transforma{} este comodín / al final de la ronda si / {C:attention}no se usaron descartes
+S	.descriptions.Joker.j_Bakery_Werewolf_Back.name	Hombre lobo (noche)
+A	.descriptions.Joker.j_Bakery_Werewolf_Back.text	Multi {X:mult,C:white}X#1#{} / {C:attention}Transforma{} este comodín / al final de la ronda / si se usaron {C:attention}2 o más / {C:attention}descartes
+S	.descriptions.Joker.j_Bakery_Wherewolf.name	Lobo errante (día)
+A	.descriptions.Joker.j_Bakery_Wherewolf.text	{C:attention}+#1#{} de tamaño de mano / El primer {C:attention}#2#{} de {V:1}#3#{} jugado / {C:attention}transforma{} este comodín / {s:0.8}La carta cambia cada ronda
+S	.descriptions.Joker.j_Bakery_Wherewolf_Back.name	Lobo errante (noche)
+A	.descriptions.Joker.j_Bakery_Wherewolf_Back.text	Cada {C:attention}#2#{} de {V:1}#3#{} jugado / da multi {X:mult,C:white}X#4#{} al anotar / {C:attention}Transforma{} este comodín al final de la ronda / si no anotó ningún {C:attention}#2#{} de {V:1}#3# / {s:0.8}La carta cambia cada ronda
+S	.descriptions.Other.Bakery_charm.name	Amuleto
+A	.descriptions.Other.Bakery_charm.text	Solo puedes llevar / un amuleto a la vez; / al comprar uno nuevo / sustituye al anterior
+S	.descriptions.Other.undiscovered_bakerycharm.name	Sin descubrir
+A	.descriptions.Other.undiscovered_bakerycharm.text	Equipa este amuleto / en una partida sin código / para saber qué hace
+S	.descriptions.Sleeve.sleeve_Bakery_Credit.name	Funda de crédito
+A	.descriptions.Sleeve.sleeve_Bakery_Credit.text	Empiezas con {C:money}$#1#{} extra / {C:red}No ganas dinero{} / de ninguna fuente
+S	.descriptions.Sleeve.sleeve_Bakery_Credit_alt.name	Funda de crédito
+A	.descriptions.Sleeve.sleeve_Bakery_Credit_alt.text	Empiezas con {C:money}$#1#{} extra / Pierdes {C:red}$1{} por carta jugada
+S	.descriptions.Sleeve.sleeve_Bakery_DN.name	Funda D&D
+A	.descriptions.Sleeve.sleeve_Bakery_DN.text	Todas las {C:green}probabilidades{} se tiran / con {C:attention}ventaja / {C:inactive}(Tira dos veces y quédate con el mejor resultado)
+S	.descriptions.Sleeve.sleeve_Bakery_DN_alt.name	Funda D&D
+A	.descriptions.Sleeve.sleeve_Bakery_DN_alt.text	Todas las {C:green}probabilidades{} se tiran / con {C:attention}doble ventaja{} / {C:inactive}(Tira tres veces y quédate con el mejor resultado)
+S	.descriptions.Sleeve.sleeve_Bakery_Dominion.name	Funda Dominion
+A	.descriptions.Sleeve.sleeve_Bakery_Dominion.text	Empiezas con {C:red}-#1#{} de tamaño de mano / y {C:attention}#2# comodines #3#{}; / {C:attention}+#4#{} de tamaño de mano / cada {C:attention}#5# apuestas iniciales
+S	.descriptions.Sleeve.sleeve_Bakery_Dominion_alt.name	Funda Dominion
+A	.descriptions.Sleeve.sleeve_Bakery_Dominion_alt.text	Empiezas con {C:red}#4#{} cartas de juego, / {C:attention}#5#{} y {C:attention}#6#
+S	.descriptions.Sleeve.sleeve_Bakery_House.name	Funda de la casa
+A	.descriptions.Sleeve.sleeve_Bakery_House.text	Cada carta jugada tiene / {C:green}#1# en #2#{} probabilidades / de cambiar de categoría y palo / tras puntuar la mano
+S	.descriptions.Sleeve.sleeve_Bakery_House_alt.name	Funda de la casa
+A	.descriptions.Sleeve.sleeve_Bakery_House_alt.text	Las cartas tienen el {C:green}doble{} de / probabilidad de cambiar y / pueden ganar modificaciones
+S	.descriptions.Sleeve.sleeve_Bakery_United.name	Funda unida
+A	.descriptions.Sleeve.sleeve_Bakery_United.text	{C:attention}-1{} de tamaño de mano; / los descartes se recargan en cada mano; / se roban {C:attention}5{} cartas bocabajo / que no se pueden descartar; / juegas la mano entera / y anotan las {C:attention}5{} mejores cartas
+S	.descriptions.Sleeve.sleeve_Bakery_United_alt.name	Funda Texas
+A	.descriptions.Sleeve.sleeve_Bakery_United_alt.text	{C:attention}+#1#{} de tamaño de mano
+S	.descriptions.Sleeve.sleeve_Bakery_Violet.name	Funda violeta
+A	.descriptions.Sleeve.sleeve_Bakery_Violet.text	Da multi {X:mult,C:white}X#1#{}
+S	.descriptions.Spectral.c_Bakery_Astrology.name	Astrología
+A	.descriptions.Spectral.c_Bakery_Astrology.text	{C:money}Vende{} todos los {C:attention}niveles de mano / por {C:money}$#1#{} cada uno
+S	.descriptions.Spectral.c_Bakery_Boids.name	Boids
+A	.descriptions.Spectral.c_Bakery_Boids.text	Convierte hasta {C:attention}#1#{} cartas / seleccionadas al {C:attention}mismo / {C:attention}palo{} y {C:attention}categoría{} aleatorios
+S	.descriptions.Spectral.c_Bakery_TimeMachine.name	Máquina del tiempo
+A	.descriptions.Spectral.c_Bakery_TimeMachine.text	Mejora {C:attention}#1#{} carta / seleccionada a {C:attention}#2#
+S	.descriptions.Tag.tag_Bakery_AlertTag.name	Etiqueta de alerta
+A	.descriptions.Tag.tag_Bakery_AlertTag.text	Mejora las próximas {C:attention}#1# / cartas anotadas a / {C:attention}#2#
+S	.descriptions.Tag.tag_Bakery_AntiTag.name	Etiqueta anti
+A	.descriptions.Tag.tag_Bakery_AntiTag.text	{C:dark_edition}+1{} espacio de comodín
+S	.descriptions.Tag.tag_Bakery_BatteryTag.name	Etiqueta de batería
+A	.descriptions.Tag.tag_Bakery_BatteryTag.text	Mejora las próximas {C:attention}#1# / cartas anotadas a / {C:attention}#2#
+S	.descriptions.Tag.tag_Bakery_BlankTag.name	Etiqueta en blanco
+A	.descriptions.Tag.tag_Bakery_BlankTag.text	{C:inactive}¿No hace nada?
+S	.descriptions.Tag.tag_Bakery_BlueTag.name	Etiqueta azul
+A	.descriptions.Tag.tag_Bakery_BlueTag.text	Mejora las próximas {C:attention}#1# / cartas anotadas a / {C:attention}#2#
+S	.descriptions.Tag.tag_Bakery_BottomTag.name	Etiqueta de fondo
+A	.descriptions.Tag.tag_Bakery_BottomTag.text	Da {C:money}$10{} por cada / espacio de comodín vacío / {C:inactive}(Dará {C:money}$#1#{C:inactive})
+S	.descriptions.Tag.tag_Bakery_CharmTag.name	Etiqueta de equipo
+A	.descriptions.Tag.tag_Bakery_CharmTag.text	Añade dos {C:attention}amuletos / a la próxima tienda
+S	.descriptions.Tag.tag_Bakery_ChocolateTag.name	Etiqueta de chocolate
+A	.descriptions.Tag.tag_Bakery_ChocolateTag.text	Da {C:chips}+#1# fichas{} y / {C:mult}+#2# multi{} al anotar / {C:chips}-#3# fichas{} y {C:mult}-#4# multi{0} / por cada mano jugada
+S	.descriptions.Tag.tag_Bakery_DownTag.name	Etiqueta abajo
+A	.descriptions.Tag.tag_Bakery_DownTag.text	Desactiva el efecto de / la próxima {C:attention}ciega jefe
+S	.descriptions.Tag.tag_Bakery_EqualTag.name	Etiqueta de igualdad
+A	.descriptions.Tag.tag_Bakery_EqualTag.text	Mejora las próximas {C:attention}#1# / cartas anotadas a / {C:attention}#2#
+S	.descriptions.Tag.tag_Bakery_GoldTag.name	Etiqueta de oro
+A	.descriptions.Tag.tag_Bakery_GoldTag.text	Mejora las próximas {C:attention}#1# / cartas anotadas a / {C:attention}#2#
+S	.descriptions.Tag.tag_Bakery_PennyTag.name	Etiqueta de céntimo
+A	.descriptions.Tag.tag_Bakery_PennyTag.text	Las cartas anotadas dan {C:money}$#1# / durante las próximas {C:attention}#2#{} manos
+S	.descriptions.Tag.tag_Bakery_PolyTag.name	Etiqueta poli
+A	.descriptions.Tag.tag_Bakery_PolyTag.text	Da multi {X:mult,C:white}X#1#{} al anotar / Dura {C:attention}1{} ronda
+S	.descriptions.Tag.tag_Bakery_RedTag.name	Etiqueta roja
+A	.descriptions.Tag.tag_Bakery_RedTag.text	Mejora las próximas {C:attention}#1# / cartas anotadas a / {C:attention}#2#
+S	.descriptions.Tag.tag_Bakery_RetriggerTag.name	Etiqueta de reactivación
+A	.descriptions.Tag.tag_Bakery_RetriggerTag.text	La tienda tiene un / {C:dark_edition}comodín de reactivación{} gratis
+S	.descriptions.Tag.tag_Bakery_RockTag.name	Etiqueta de roca
+A	.descriptions.Tag.tag_Bakery_RockTag.text	Mejora las próximas {C:attention}#1# / cartas anotadas a / {C:attention}#2#
+S	.descriptions.Tag.tag_Bakery_RouletteTag.name	Etiqueta de ruleta
+A	.descriptions.Tag.tag_Bakery_RouletteTag.text	Mejora las próximas {C:attention}#1# / cartas anotadas a / {C:attention}#2#
+S	.descriptions.Tag.tag_Bakery_StrangeTag.name	Etiqueta extraña
+S	.descriptions.Tag.tag_Bakery_TopTag.name	Etiqueta de cima
+A	.descriptions.Tag.tag_Bakery_TopTag.text	Da {C:money}50¢{} por cada / carta de tu baraja / {C:inactive}(Dará {C:money}$#1#{C:inactive})
+S	.descriptions.Tag.tag_Bakery_UpTag.name	Etiqueta arriba
+A	.descriptions.Tag.tag_Bakery_UpTag.text	{C:attention}Reactiva{} todas las cartas / anotadas durante las próximas / {C:attention}#1#{} manos
+S	.descriptions.Tarot.c_Bakery_Scribe.name	El escriba
+A	.descriptions.Tarot.c_Bakery_Scribe.text	Crea {C:attention}#1#{} copia de {C:dark_edition}carbono{} / de {C:attention}#2#{} {C:attention}carta de juego{} / o {C:attention}comodín{} seleccionado / {C:inactive}(Debe haber espacio) / {C:inactive}(Quita {C:eternal}Eterno{C:inactive} de la copia)
+S	.misc.challenge_names.c_Bakery_Balanced	Equilibrado
+S	.misc.challenge_names.c_Bakery_Sprint	Sprint
+S	.misc.challenge_names.c_Bakery_Vagabond	Vagabundo
+S	.misc.dictionary.b_Bakery_ante	(Apuesta inicial)
+S	.misc.dictionary.b_Bakery_double_tags	Etiquetas dobles
+S	.misc.dictionary.b_Bakery_equip	EQUIPAR
+S	.misc.dictionary.b_Bakery_return	OBTENER
+S	.misc.dictionary.b_Bakery_shattered	¡Hecho añicos!
+S	.misc.dictionary.b_Bakery_store	GUARDAR
+A	.misc.dictionary.k_BakeryCharmInfo	Solo puedes llevar un amuleto a la vez. / Al comprar uno nuevo sustituye al anterior.
+S	.misc.dictionary.k_Bakery_charm	Amuleto
+S	.misc.dictionary.k_Bakery_charms	Amuletos
+S	.misc.dictionary.k_Bakery_hud_hands_and_discards	Manos y descartes
+S	.misc.dictionary.k_bakerycharm	Amuleto
+S	.misc.dictionary.ph_Bakery_Wearywolf	Te salvó el Lobo cansado
+S	.misc.labels.Bakery_Carbon	Carbono
+S	.misc.poker_hands.Bakery_FlushMansion	Mansión de color
+S	.misc.poker_hands.Bakery_FlushSix	Seis de color
+S	.misc.poker_hands.Bakery_FlushThreePair	Tres parejas de color
+S	.misc.poker_hands.Bakery_FlushTriplets	Tríos de color
+S	.misc.poker_hands.Bakery_FullFive	Full de cinco
+S	.misc.poker_hands.Bakery_FullFlushFive	Full de cinco de color
+S	.misc.poker_hands.Bakery_RoyalFlushHouse	Harén real
+S	.misc.poker_hands.Bakery_SixOfAKind	Seis iguales
+S	.misc.poker_hands.Bakery_StraightFlushHouse	Harén de color
+S	.misc.poker_hands.Bakery_StraightHouse	Harén
+S	.misc.poker_hands.Bakery_StuffedFlush	Color relleno
+S	.misc.poker_hands.Bakery_StuffedHouse	Full relleno
+S	.misc.poker_hands.Bakery_ThreePair	Tres parejas
+S	.misc.poker_hands.Bakery_TwoTriplets	Dos tríos
+S	.misc.v_dictionary.b_Bakery_ante_times	(Apuesta inicial*#1#)
+S	.misc.v_dictionary.b_Bakery_deposit	DEPOSITAR $#1#
+S	.misc.v_dictionary.v_Bakery_artist	Arte: #1#
+S	.misc.v_dictionary.v_Bakery_by	Hecho por: #1#
+S	.misc.v_dictionary.v_Bakery_coder	Código: #1#
+S	.misc.v_dictionary.v_Bakery_idea	Idea: #1#
+S	.misc.v_dictionary.v_Bakery_value?	¿#1#?
+A	.misc.v_text.ch_c_Bakery_Balanced	El {C:mult}multi{} no puede superar las {C:chips}fichas{}
+A	.misc.v_text.ch_c_Bakery_Sprint_Big	Hay que omitir las {C:attention}ciegas grandes{}
+A	.misc.v_text.ch_c_Bakery_Sprint_Small	Hay que omitir las {C:attention}ciegas pequeñas{}
+A	.misc.v_text.ch_c_Bakery_Vagabond	El {C:money}dinero{} no puede superar {C:money}$#1#
