@@ -1,4 +1,4 @@
---- Guía y Traducción ES · v0.4
+--- Guía y Traducción ES · v0.5
 --- Explica en español cada mod instalado y traduce al español lo que
 --- los demás mods dejaron en inglés, sin tocar sus archivos.
 ---   · localization/es_ES.lua          → fichas de cada mod (menú «Mods»)
@@ -8,7 +8,7 @@
 local mod = SMODS.current_mod
 
 GuiaES = GuiaES or {}
-GuiaES.VERSION = "0.4"
+GuiaES.VERSION = "0.5"
 GuiaES.INSTAGRAM = "https://www.instagram.com/_shun._05/"
 GuiaES.MODS_POR_PAGINA = 8
 
@@ -527,12 +527,20 @@ end
 -- 4. Menú principal centrado y selector de packs de mods (menu.lua)
 -------------------------------------------------------------------------------
 do
-    local chunk, err = SMODS.load_file("menu.lua")
-    if chunk then
-        local ok, fallo = pcall(chunk)
-        if not ok then sendWarnMessage("menu.lua: " .. tostring(fallo), "GuiaES") end
-    else
-        sendWarnMessage("menu.lua: " .. tostring(err), "GuiaES")
+    -- menu.lua define el reinicio y el guardado de partidas que usan los demás
+    for _, archivo in ipairs({ "menu.lua", "cierres.lua", "comprobador.lua" }) do
+        local chunk, err = SMODS.load_file(archivo)
+        if chunk then
+            local ok, resultado = pcall(chunk)
+            if not ok then
+                sendWarnMessage(archivo .. ": " .. tostring(resultado), "GuiaES")
+            elseif type(resultado) == "table" and type(resultado.iniciar) == "function" then
+                local ok2, fallo = pcall(resultado.iniciar)
+                if not ok2 then sendWarnMessage(archivo .. " (iniciar): " .. tostring(fallo), "GuiaES") end
+            end
+        else
+            sendWarnMessage(archivo .. ": " .. tostring(err), "GuiaES")
+        end
     end
 end
 

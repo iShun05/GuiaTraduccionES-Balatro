@@ -23,9 +23,11 @@ return {
                     "{C:green}Rendimiento:{} puntuar es unas 30 veces",
                     "más rápido (adiós a «Calculando...»).",
                     "{C:green}Packs de mods:{} botón en el menú principal",
-                    "para combinar packs y aplicarlos al momento.",
+                    "para combinar packs, guardar perfiles y aplicarlos.",
+                    "{C:green}Errores:{} al cerrarse el juego te dice qué mod",
+                    "falló y puedes desactivarlo con una tecla.",
                     " ",
-                    "{C:inactive}v0.4 - Contacto: Instagram @_shun._05{}",
+                    "{C:inactive}v0.5 - Contacto: Instagram @_shun._05{}",
                 },
             },
             Steamodded = {
@@ -392,7 +394,7 @@ return {
             guiaes_titulo = "Tus mods instalados",
             guiaes_pagina = "Página",
             guiaes_contacto = "Contacto (Instagram)",
-            guiaes_version = "Guía y Traducción ES v0.4",
+            guiaes_version = "Guía y Traducción ES v0.5",
             guiaes_ayuda = "Pulsa un mod en la lista de Mods para ver su ficha completa",
             guiaes_sin_resumen = "Sin resumen disponible",
 

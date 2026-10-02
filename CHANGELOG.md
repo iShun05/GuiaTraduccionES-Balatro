@@ -1,5 +1,14 @@
 # Historial de cambios — Guía y Traducción ES
 
+## v0.5 — 2026-10-02
+- **Pantalla de error que señala al mod culpable** (`cierres.lua`): cuando el juego se cierra por un error, la pantalla de Steamodded ahora empieza por una explicación en español: qué mod ha fallado (por los archivos de la pila y del mensaje), en qué archivo y línea, qué significa el error y qué otros mods aparecen. **Pulsa 1, 2 o 3 para desactivar ese mod** (y los que dependen de él, p. ej. Talisman arrastra a Cryptid) y el juego se reabre solo; la partida a medias se aparta para no cerrarse al continuar. `R` reabre sin cambios. Cada cierre queda en `guiaes_cierres.log`.
+- **Reinicio fiable**: el reinicio interno de LÖVE (`SMODS.restart_game`) fallaba con Multiplayer; ahora la pantalla de error, el menú «Mods» de Steamodded y los packs usan la reapertura en un proceso nuevo.
+- **Comprobador de mods en Multiplayer** (`comprobador.lua`): en la sala se compara la lista completa de mods y versiones con el otro jugador (Multiplayer ya la intercambiaba pero solo avisaba, en inglés, de Multiplayer y Steamodded). El aviso en español dice qué te falta a ti, qué le falta a él y qué versiones no coinciden, deduce con qué packs juega y ofrece **«Igualar a <amigo> y reabrir»**.
+- **Perfiles de packs guardados con nombre** (hasta 6, p. ej. «Con Marcos», «Yo solo»): se guardan con **GUARDAR COMBINACIÓN**, se cargan con un clic y se borran con la «x». Se guardan en `guiaes_perfiles.txt`.
+- **Herramienta de traducciones** (`herramientas/revisar_traducciones.py`): tras actualizar un mod, lista los textos nuevos o sin traducir, los cuyo inglés cambió desde la última instantánea (`traducciones/_fuente.json`) y las traducciones obsoletas, y escribe los pendientes en `traducciones/pendientes/` con el formato de los TSV. Funciona con `luajit`/`lua` o con la biblioteca de Lua de Balatro (`lua_ctypes.py`). Estado actual: 64 pendientes, todos nombres propios, bromas o frases en italiano.
+- Probado en el juego real: aviso de Multiplayer con una sala simulada, perfiles, y la pantalla de error con un fallo simulado en Ortalab y la tecla 1 (desactivó Ortalab, apartó la partida y reabrió el juego).
+- Archivos: `cierres.lua`, `comprobador.lua` y `herramientas/*` (nuevos), `menu.lua`, `main.lua`, `localization/es_ES.lua`, `manifest.json`.
+
 ## v0.4 — 2026-10-02
 - **Menú principal centrado**: con MODS, el JUGAR de Solatro y «Español (España)» la fila medía 19,7 de 20 unidades, chocaba con «Perfil» y se salía por la derecha. Botones un 20 % más compactos, idioma abreviado («Español») y la caja se recoloca con su ancho real entre «Perfil» y el borde (`menu.lua`).
 - **Packs de mods combinables** (botón «PACKS DE MODS» en el menú principal y pestaña «Packs» de la guía): Calidad de vida, Balatro ampliado, Cine (Kino), Pokémon, Binding of Isaac, Ortalab y Caos (Cryptid). Se marcan varios a la vez, con accesos rápidos (solo juego base, solo calidad de vida, marcar todo).

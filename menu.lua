@@ -328,6 +328,161 @@ local function boton_rapido(etiqueta, modo, color)
     }
 end
 
+-------------------------------------------------------------------------------
+-- Perfiles de packs guardados con nombre (p. ej. «Con Marcos», «Yo solo»)
+-------------------------------------------------------------------------------
+-- Se guardan en «guiaes_perfiles.txt» (carpeta de datos de Balatro), una línea por
+-- perfil: nombre <TAB> clave+clave. Sirven para cualquier perfil de jugador.
+local ARCHIVO_PERFILES = "guiaes_perfiles.txt"
+local MAX_PERFILES = 6
+local MAX_NOMBRE = 14
+
+local function limpiar_nombre(cadena)
+    cadena = (cadena or ""):gsub("[%c\t]", " "):gsub("^%s+", ""):gsub("%s+$", "")
+    return cadena:sub(1, MAX_NOMBRE)
+end
+
+local function cargar_perfiles()
+    local lista = {}
+    local ok, contenido = pcall(love.filesystem.read, ARCHIVO_PERFILES)
+    if not ok or type(contenido) ~= "string" then return lista end
+    for linea in contenido:gmatch("[^\r\n]+") do
+        local nombre, claves = linea:match("^(.-)\t(.*)$")
+        if nombre and #nombre > 0 then
+            local seleccion = {}
+            for clave in claves:gmatch("[^+]+") do seleccion[clave] = true end
+            lista[#lista + 1] = { nombre = limpiar_nombre(nombre), seleccion = seleccion }
+        end
+    end
+    return lista
+end
+
+local function guardar_perfiles(lista)
+    local lineas = {}
+    for _, perfil in ipairs(lista) do
+        local claves = {}
+        for clave in pairs(perfil.seleccion) do claves[#claves + 1] = clave end
+        table.sort(claves)
+        lineas[#lineas + 1] = perfil.nombre .. "\t" .. table.concat(claves, "+")
+    end
+    pcall(love.filesystem.write, ARCHIVO_PERFILES, table.concat(lineas, "\n") .. "\n")
+end
+
+local function misma_seleccion(a, b)
+    for clave in pairs(a) do if not b[clave] then return false end end
+    for clave in pairs(b) do if not a[clave] then return false end end
+    return true
+end
+
+local function copiar_seleccion(origen)
+    local copia = {}
+    for clave in pairs(origen) do copia[clave] = true end
+    return copia
+end
+
+-- Claves que ya no existen (un pack retirado) se ignoran al cargar
+local function seleccion_valida(seleccion)
+    local valida, existentes = {}, {}
+    for _, pack in ipairs(PACKS) do existentes[pack.clave] = true end
+    for clave in pairs(seleccion) do if existentes[clave] then valida[clave] = true end end
+    return valida
+end
+
+GuiaES.perfil_edicion = GuiaES.perfil_edicion or { nombre = "" }
+
+local function fila_perfiles(seleccion)
+    local perfiles = cargar_perfiles()
+    local nodos = {}
+    local por_fila, actual = 3, {}
+    for i, perfil in ipairs(perfiles) do
+        local activo = misma_seleccion(seleccion_valida(perfil.seleccion), seleccion)
+        actual[#actual + 1] = {
+            n = G.UIT.C,
+            config = {
+                align = "cm", padding = 0.06, r = 0.1, minw = 2.5, minh = 0.5, maxw = 2.5,
+                colour = activo and G.C.PURPLE or mix_colours(G.C.PURPLE, G.C.BLACK, 0.4),
+                hover = true, shadow = true, button = "guiaes_perfil_cargar", ref_table = perfil,
+                outline = activo and 1.4 or nil, outline_colour = activo and G.C.WHITE or nil,
+            },
+            nodes = { fila({ texto(perfil.nombre, 0.3) }) },
+        }
+        actual[#actual + 1] = {
+            n = G.UIT.C,
+            config = {
+                align = "cm", padding = 0.05, r = 0.1, minw = 0.45, minh = 0.5,
+                colour = mix_colours(G.C.RED, G.C.BLACK, 0.5), hover = true, shadow = true,
+                button = "guiaes_perfil_borrar", ref_table = perfil,
+            },
+            nodes = { fila({ texto("x", 0.3) }) },
+        }
+        actual[#actual + 1] = { n = G.UIT.C, config = { minw = 0.15 } }
+        if #actual >= por_fila * 3 or i == #perfiles then
+            nodos[#nodos + 1] = fila(actual, 0.03)
+            actual = {}
+        end
+    end
+    local filas = {}
+    if #perfiles == 0 then
+        filas[#filas + 1] = fila({ texto("Aún no tienes perfiles: marca packs, escribe un nombre y pulsa GUARDAR.", 0.26, G.C.UI.TEXT_INACTIVE) })
+    else
+        for _, n in ipairs(nodos) do filas[#filas + 1] = n end
+    end
+    filas[#filas + 1] = fila({
+        create_text_input({
+            id = "guiaes_perfil_nombre", w = 3.4, h = 0.5, text_scale = 0.3, max_length = MAX_NOMBRE,
+            prompt_text = "Nombre del perfil", ref_table = GuiaES.perfil_edicion, ref_value = "nombre",
+            colour = mix_colours(G.C.BLUE, G.C.BLACK, 0.5),
+        }),
+        { n = G.UIT.C, config = { minw = 0.15 } },
+        {
+            n = G.UIT.C,
+            config = {
+                align = "cm", padding = 0.06, r = 0.1, minw = 3.2, minh = 0.5,
+                colour = G.C.BLUE, hover = true, shadow = true, button = "guiaes_perfil_guardar",
+            },
+            nodes = { fila({ texto("GUARDAR COMBINACIÓN", 0.28) }) },
+        },
+    }, 0.04)
+    return filas
+end
+
+G.FUNCS.guiaes_perfil_cargar = function(e)
+    GuiaES.packs_seleccion = seleccion_valida(copiar_seleccion(e.config.ref_table.seleccion))
+    GuiaES.reabrir_selector()
+end
+
+G.FUNCS.guiaes_perfil_borrar = function(e)
+    local objetivo = e.config.ref_table
+    local nuevos = {}
+    for _, perfil in ipairs(cargar_perfiles()) do
+        if perfil.nombre ~= objetivo.nombre then nuevos[#nuevos + 1] = perfil end
+    end
+    guardar_perfiles(nuevos)
+    GuiaES.reabrir_selector()
+end
+
+G.FUNCS.guiaes_perfil_guardar = function()
+    local perfiles = cargar_perfiles()
+    local nombre = limpiar_nombre(GuiaES.perfil_edicion.nombre)
+    if nombre == "" then nombre = "Perfil " .. (#perfiles + 1) end
+    local seleccion = copiar_seleccion(GuiaES.packs_seleccion or {})
+    local reemplazado = false
+    for _, perfil in ipairs(perfiles) do
+        if perfil.nombre:lower() == nombre:lower() then
+            perfil.nombre, perfil.seleccion, reemplazado = nombre, seleccion, true
+        end
+    end
+    if not reemplazado then
+        if #perfiles >= MAX_PERFILES then table.remove(perfiles, 1) end   -- se descarta el más antiguo
+        perfiles[#perfiles + 1] = { nombre = nombre, seleccion = seleccion }
+    end
+    guardar_perfiles(perfiles)
+    GuiaES.perfil_edicion.nombre = ""
+    GuiaES.reabrir_selector()
+end
+
+GuiaES.perfiles_api = { cargar = cargar_perfiles, guardar = guardar_perfiles }
+
 local function ui_packs()
     local seleccion = GuiaES.packs_seleccion or seleccion_actual()
     GuiaES.packs_seleccion = seleccion
@@ -397,6 +552,9 @@ local function ui_packs()
         fila({ texto("PACKS DE MODS", 0.6) }, 0.03),
         fila({ texto("Marca uno o varios packs y pulsa Aplicar: el juego se cierra y se vuelve a abrir con esos mods.", 0.28, G.C.UI.TEXT_INACTIVE) }),
         rapidos,
+        { n = G.UIT.R, config = { align = "cm", padding = 0.04 }, nodes = {
+            { n = G.UIT.C, config = { align = "cm" }, nodes = fila_perfiles(seleccion) },
+        } },
         fila({ { n = G.UIT.C, config = { align = "cm" }, nodes = rejilla } }, 0.05),
         { n = G.UIT.R, config = { align = "cm", padding = 0.12, r = 0.1, colour = G.C.BLACK, minw = 13 }, nodes = {
             { n = G.UIT.C, config = { align = "cm" }, nodes = detalle },
@@ -422,6 +580,7 @@ end
 local function reabrir_selector()
     G.FUNCS.overlay_menu({ definition = ui_packs() })
 end
+GuiaES.reabrir_selector = reabrir_selector
 
 G.FUNCS.guiaes_abrir_packs = function()
     GuiaES.packs_seleccion = nil
@@ -570,3 +729,6 @@ GuiaES.seleccion_actual = seleccion_actual
 GuiaES.conjunto_de_seleccion = conjunto_de_seleccion
 GuiaES.aplicar_seleccion = aplicar_seleccion
 GuiaES.valorar_packs = valorar
+GuiaES.apartar_partida = apartar_partida
+GuiaES.firma = firma
+GuiaES.conjunto_actual = conjunto_actual
