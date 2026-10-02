@@ -319,3 +319,13 @@ target = '''=[SMODS TheBindingOfJimbo "src/ui/artist.lua"]'''
 pattern = '''local seal = G\.P_SEALS\[card\.seal\]'''
 position = "at"
 payload = '''local seal = G.P_SEALS[card.seal] or {}'''
+
+# The Binding of Jimbo: baraja «Keeper» (manos extra según el dinero). Con Talisman
+# el cálculo da un número grande y `hands >= 1` cerraba el juego al empezar la ciega.
+[[patches]]
+[patches.pattern]
+target = '''=[SMODS TheBindingOfJimbo "src/backs/12_keeper.lua"]'''
+pattern = "local hands = math.min(self.config.max_hands,math.floor((G.GAME.dollars + (G.GAME.dollar_buffer or 0))/self.config.every))"
+position = "at"
+payload = "local hands = math.min(self.config.max_hands, math.floor(guiaes_num(G.GAME.dollars + (G.GAME.dollar_buffer or 0)) / self.config.every))"
+match_indent = true

@@ -1,5 +1,20 @@
 # Historial de cambios — Guía y Traducción ES
 
+## v0.4 — 2026-10-02
+- **Menú principal centrado**: con MODS, el JUGAR de Solatro y «Español (España)» la fila medía 19,7 de 20 unidades, chocaba con «Perfil» y se salía por la derecha. Botones un 20 % más compactos, idioma abreviado («Español») y la caja se recoloca con su ancho real entre «Perfil» y el borde (`menu.lua`).
+- **Packs de mods combinables** (botón «PACKS DE MODS» en el menú principal y pestaña «Packs» de la guía): Calidad de vida, Balatro ampliado, Cine (Kino), Pokémon, Binding of Isaac, Ortalab y Caos (Cryptid). Se marcan varios a la vez, con accesos rápidos (solo juego base, solo calidad de vida, marcar todo).
+  - Muestra qué trae la combinación y una **valoración** por colores: desnivelada (Cryptid con otros), avisos (Ortalab mezclado, Kino + Pokémon, Isaac con otro temático, demasiados packs), combinaciones buenas y notas de Multiplayer.
+  - Aplica con la lista negra de Steamodded/Lovely, añade dependencias solas y **reabre el juego** como proceso nuevo (el reinicio interno de LÖVE fallaba con «Failed to initialize filesystem» porque el hilo de red de Multiplayer nunca termina).
+  - **Partidas guardadas**: al cambiar de mods la partida a medias se aparta con la firma de su combinación y vuelve sola al elegir otra vez esos packs (si no, «Continuar» cerraría el juego por cartas de mods desactivados).
+  - Datos editables en `packs.lua`.
+- **Estabilidad** (encontrado probando cada pack por separado con el bot):
+  - Steamodded + mejoras cuánticas: la carta «bloqueada» del aviso de desbloqueo (`j_locked`) no existe en `G.P_CENTERS` y cerraba el juego; se filtran claves inexistentes.
+  - Talisman en desbloqueos: `check_for_unlock` recibe números grandes (nivel de mano) y mods como Paperback («Copa de sake») los comparaban con números normales.
+  - Talisman en récords: Cartomancer compara la puntuación con `to_big(...)` y se cerraba si le llegaba un número normal.
+  - The Binding of Jimbo: baraja «Keeper» (`hands >= 1` con número grande).
+- Probados con el bot: Juego base, Calidad de vida, + Balatro ampliado, + Kino, + Pokémon (sin cierres tras los arreglos). Pendiente de completar: Isaac, Ortalab y Caos por separado.
+- Archivos: `menu.lua` y `packs.lua` (nuevos), `main.lua`, `lovely.toml` (35 parches), `localization/es_ES.lua`, `recomendaciones.lua`, `manifest.json`.
+
 ## v0.3 — 2026-10-02
 - **Rendimiento (adiós a «Calculando...»)**: The Binding of Jimbo activa en Steamodded las «mejoras cuánticas», que obligaban a recalcular todos los comodines y zonas cada vez que el juego consultaba la mejora de una carta (~8.000 recálculos y 7-14 s por mano, incluso sin comodines). Ahora se detectan automáticamente (inspeccionando el código con `jit.util`) las 13 cartas que usan esa mecánica y el recálculo solo se hace si alguna está en juego. Medido con el bot: **0,2-0,5 s por mano** (unas 30 veces más rápido) con resultados idénticos.
 - **Estabilidad** (revisión para jugar Multiplayer entre Windows y Mac sin cierres), probada con un bot que juega partidas completas a velocidad x8:

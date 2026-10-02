@@ -1,4 +1,4 @@
---- Guía y Traducción ES · v0.3
+--- Guía y Traducción ES · v0.4
 --- Explica en español cada mod instalado y traduce al español lo que
 --- los demás mods dejaron en inglés, sin tocar sus archivos.
 ---   · localization/es_ES.lua          → fichas de cada mod (menú «Mods»)
@@ -8,7 +8,7 @@
 local mod = SMODS.current_mod
 
 GuiaES = GuiaES or {}
-GuiaES.VERSION = "0.3"
+GuiaES.VERSION = "0.4"
 GuiaES.INSTAGRAM = "https://www.instagram.com/_shun._05/"
 GuiaES.MODS_POR_PAGINA = 8
 
@@ -121,6 +121,48 @@ local start_run_ref = Game.start_run
 function Game:start_run(...)
     pcall(arreglar_bunco_jokerdisplay)
     return start_run_ref(self, ...)
+end
+
+-- 1d-bis. Talisman en los desbloqueos: el juego llama a check_for_unlock con el
+--     nivel de la mano o la puntuación como números grandes, y los desbloqueos de
+--     los mods los comparan con números normales (p. ej. «Copa de sake» de
+--     Paperback: args.level >= 9). Se pasan como números normales a todos.
+if type(check_for_unlock) == "function" then
+    local check_for_unlock_ref = check_for_unlock
+    function check_for_unlock(args, ...)
+        if type(args) == "table" and type(is_number) == "function" then
+            local copia
+            for clave, valor in pairs(args) do
+                if type(valor) == "table" and is_number(valor) then
+                    copia = copia or {}
+                    copia[clave] = guiaes_num(valor)
+                end
+            end
+            if copia then
+                for clave, valor in pairs(args) do
+                    if copia[clave] == nil then copia[clave] = valor end
+                end
+                args = copia
+            end
+        end
+        return check_for_unlock_ref(args, ...)
+    end
+end
+
+-- 1d-ter. Talisman en los récords: Cartomancer compara la puntuación de la mano
+--     con to_big(récord), que con Talisman siempre es un número grande; si algún
+--     mod pasa la puntuación como número normal, el juego se cierra al puntuar.
+--     Con Talisman activo, la puntuación se pasa siempre como número grande (las
+--     versiones de Talisman y Kino de esta función ya usan to_big en todo).
+if type(check_and_set_high_score) == "function" then
+    local check_and_set_high_score_ref = check_and_set_high_score
+    function check_and_set_high_score(score, amt, ...)
+        if type(amt) == "number" and type(to_big) == "function" and type(is_number) == "function" then
+            local grande = to_big(amt)
+            if type(grande) == "table" then amt = grande end
+        end
+        return check_and_set_high_score_ref(score, amt, ...)
+    end
 end
 
 -- 1e. Estabilidad: cartas forzadas que están prohibidas
@@ -275,11 +317,19 @@ do
                     -- Mismo resultado que Steamodded cuando nadie añade mejoras
                     local mejoras = {}
                     local clave = card.config and card.config.center and card.config.center.key
-                    if clave and clave ~= "c_base" and not extra_only then mejoras[clave] = true end
+                    if clave and clave ~= "c_base" and not extra_only and G.P_CENTERS[clave] then mejoras[clave] = true end
                     return mejoras
                 end
             end
-            return get_enhancements_ref(card, extra_only)
+            -- Solo claves que existen: la carta «bloqueada» del aviso de desbloqueo
+            -- (j_locked) no está en G.P_CENTERS y has_playing_card_property se cerraba
+            local mejoras = get_enhancements_ref(card, extra_only)
+            if type(mejoras) == "table" and G.P_CENTERS then
+                for clave in pairs(mejoras) do
+                    if not G.P_CENTERS[clave] then mejoras[clave] = nil end
+                end
+            end
+            return mejoras
         end
     end
 end
@@ -375,7 +425,7 @@ end
 local function pagina_guia(lista, desde, hasta, num, total)
     local filas = {
         { n = G.UIT.R, config = { align = "cm", padding = 0.06 }, nodes = {
-            { n = G.UIT.T, config = { text = texto_loc("guiaes_titulo") .. "  ·  " .. texto_loc("guiaes_pagina") .. " " .. num .. "/" .. total, scale = 0.4, colour = G.C.UI.TEXT_LIGHT, shadow = true } },
+            { n = G.UIT.T, config = { text = texto_loc("guiaes_titulo") .. "  -  " .. texto_loc("guiaes_pagina") .. " " .. num .. "/" .. total, scale = 0.4, colour = G.C.UI.TEXT_LIGHT, shadow = true } },
         } },
     }
     for i = desde, hasta do filas[#filas + 1] = fila_mod(lista[i]) end
@@ -412,7 +462,7 @@ local function pagina_recomendaciones(pagina)
         } }
         for _, linea in ipairs(seccion.lineas or {}) do
             filas[#filas + 1] = { n = G.UIT.R, config = { align = "cl", padding = 0.02 }, nodes = {
-                { n = G.UIT.T, config = { text = "  · " .. linea, scale = 0.28, colour = G.C.UI.TEXT_LIGHT } },
+                { n = G.UIT.T, config = { text = "  - " .. linea, scale = 0.28, colour = G.C.UI.TEXT_LIGHT } },
             } }
         end
     end
@@ -422,11 +472,37 @@ local function pagina_recomendaciones(pagina)
     }
 end
 
+-- Pestaña «Packs»: acceso al selector de packs de mods (menu.lua)
+local function pagina_packs()
+    local filas = {
+        { n = G.UIT.R, config = { align = "cm", padding = 0.08 }, nodes = {
+            { n = G.UIT.T, config = { text = "Packs de mods", scale = 0.5, colour = G.C.UI.TEXT_LIGHT, shadow = true } },
+        } },
+    }
+    for _, linea in ipairs({
+        "Marca uno o varios packs (calidad de vida, Balatro ampliado,",
+        "Kino, Pokémon, Isaac, Ortalab, Cryptid) y verás qué trae la",
+        "combinación y si está desnivelada o da problemas.",
+        "Al aplicar, el juego se cierra y se vuelve a abrir solo.",
+        "También está en el menú principal: botón «PACKS DE MODS».",
+    }) do
+        filas[#filas + 1] = { n = G.UIT.R, config = { align = "cm" }, nodes = {
+            { n = G.UIT.T, config = { text = linea, scale = 0.3, colour = G.C.UI.TEXT_LIGHT } },
+        } }
+    end
+    filas[#filas + 1] = { n = G.UIT.R, config = { align = "cm", padding = 0.15 }, nodes = {
+        UIBox_button({ button = "guiaes_abrir_packs", label = { "ELEGIR PACK" }, colour = G.C.PURPLE, minw = 4, minh = 0.8, scale = 0.45 }),
+    } }
+    return { n = G.UIT.ROOT, config = { align = "cm", padding = 0.15, r = 0.1, colour = G.C.BLACK, minw = 10 }, nodes = filas }
+end
+
 mod.extra_tabs = function()
     local lista = mods_ordenados()
     local por_pagina = GuiaES.MODS_POR_PAGINA
     local total = math.max(1, math.ceil(#lista / por_pagina))
-    local pestanas = {}
+    local pestanas = {
+        { label = "Packs", tab_definition_function = pagina_packs },
+    }
     for p = 1, total do
         local desde, hasta = (p - 1) * por_pagina + 1, math.min(p * por_pagina, #lista)
         pestanas[#pestanas + 1] = {
@@ -445,5 +521,18 @@ end
 
 G.FUNCS.guiaes_instagram = function()
     love.system.openURL(GuiaES.INSTAGRAM)
+end
+
+-------------------------------------------------------------------------------
+-- 4. Menú principal centrado y selector de packs de mods (menu.lua)
+-------------------------------------------------------------------------------
+do
+    local chunk, err = SMODS.load_file("menu.lua")
+    if chunk then
+        local ok, fallo = pcall(chunk)
+        if not ok then sendWarnMessage("menu.lua: " .. tostring(fallo), "GuiaES") end
+    else
+        sendWarnMessage("menu.lua: " .. tostring(err), "GuiaES")
+    end
 end
 
